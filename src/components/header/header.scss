@@ -1,0 +1,34 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+
+    .nav {
+        ul {
+            width: 100%;
+            //padding: 0 1rem;
+            margin: 2rem 2.5rem;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $white;
+    
+            li {
+                padding: 1rem;
+
+                a {
+                    color: $twilight-blue;
+                    font-weight: 500;
+                    opacity: 0.6;
+
+                    &.dark {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

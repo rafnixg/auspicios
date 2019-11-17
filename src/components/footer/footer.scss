@@ -1,0 +1,59 @@
+footer {
+    position: relative;
+    padding: 3rem;
+    background-color: $dark-blue;
+
+    .social, .contact, .newsletter {
+        max-width: 250px;
+    }
+
+    .social-networks {
+        i {
+            color: $white;
+
+            &::before {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .opacity-4 {
+        opacity: 0.4;
+    }
+
+
+    .form-group {
+        label {
+            color: $white;
+            opacity: 0.4;
+            font-size: 13px;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+
+        input {
+            color: $white;
+            font-size: 13px;
+            border-bottom: 1px solid rgba($color: $white, $alpha: 0.4);
+
+            &.active {
+                color: $white;
+                border-color: $white;   
+            }
+        }
+    }
+
+    .meftah {
+        position: absolute;
+        bottom: -75px;
+        right: 0;
+
+        @media (min-width: 992px) {
+            bottom: -30px;
+        }
+    }
+    
+}
+
