@@ -1,0 +1,57 @@
+<section class="expositors">
+    <section class="background">
+        <h1 class="title-with-stroke">
+            <span>Nuestros</span>
+            <span>Expositores</span>
+        </h1>
+    </section>
+    <section class="guests">
+        <div class="container trama">
+            <h2 class="gold-title mb-0">Invitados</h2>
+            <h3 class="twilight-blue-subtitle">
+                Nuestros ponentes 
+                esperan por ti.
+            </h3>
+            <div class="buttons">
+                <button class="btn light">
+                    Expositores 1
+                    <i class="flaticon-arrow-point-to-right"></i>
+                </button>
+                <button class="btn light">
+                    Expositores 2
+                    <i class="flaticon-arrow-point-to-right"></i>
+                </button>
+                <button class="btn light">
+                    Expositores 3
+                    <i class="flaticon-arrow-point-to-right"></i>
+                </button>
+            </div>
+            <div class="lists">
+                <% expositors.forEach((item, i) => { %>
+                    <div class="expositors-list">
+                        <% item.forEach((expositor, i) => { %>
+                            <div class="expositor" style="background-image: url(<%= expositor.img %>);">
+                                <div>
+                                    <p class="name"><%= expositor.firstName %></p>
+                                    <p class="name"><%= expositor.lastName %></p>
+                                    <p class="position"><%= expositor.position %></p>
+                                </div>
+                                <div class="social-networks mt-auto">
+                                    <a href="<%= expositor.facebook %>">
+                                        <i class="flaticon-facebook-logo mr-3"></i>
+                                    </a>
+                                    <a href="<%= expositor.twitter %>">
+                                        <i class="flaticon-twitter mr-3"></i>
+                                    </a>
+                                    <a href="<%= expositor.instagram %>">
+                                        <i class="flaticon-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        <% }) %>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+</section>

@@ -11,8 +11,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,6 +58,9 @@
     font-size: 30px;
     font-weight: 900;
 
+    span {
+        display: block;
+    }
     
     *:first-child {
         color: $white;
@@ -94,25 +98,40 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
 
-    &.link-button {
-        display: inline-block;
-        padding: 1rem 1.5rem;
-        border-radius: 40px;
-        letter-spacing: 0.3px;
+.btn {
+    display: inline-block;
+    width: max-content;
+    padding: 1rem 1.5rem;
+    border-radius: 40px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 0 30px 11px rgba(0, 0, 0, 0.05);
 
-        &.light {
-            background-color: $white;
-            color: rgba($color: $twilight-blue, $alpha: 0.6);
-        }
+    &:focus {
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
+    }
 
-        &.dark {
-            background-color: $marine-blue;
-            color: $white;
-        }
+    &.light {
+        background-color: $white;
+        color: rgba($color: $twilight-blue, $alpha: 0.6);
+    }
+
+    &.dark {
+        background-color: $marine-blue;
+        color: $white;
     }
 }
 
+.social-networks {
+    i {
+        color: $white;
+
+        &::before {
+            font-size: 24px;
+        }
+    }
+}
 
 img {
     max-width: 100%;
@@ -157,6 +176,11 @@ input, .form-control {
         padding-bottom: 5rem;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .background {
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 
     .twilight-blue-subtitle {

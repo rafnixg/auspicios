@@ -1,0 +1,105 @@
+.expositors {
+
+    .background {
+        min-height: 85vh;
+        padding-top: 154px;
+        background-image: url('../img/backgrounds/expositors.jpg');
+    }
+    
+    .guests {
+        position: relative;
+
+        .twilight-blue-subtitle {
+            max-width: 385px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+
+            .btn {
+                margin-right: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .lists {
+
+            .expositors-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+    
+                .expositor {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 500px;
+                    padding: 2rem;
+                    margin-top: 2rem;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: rgba(0, 21, 62, 0.4);
+                    background-blend-mode: darken;
+                    color: $white;
+    
+                    .name {
+                        font-size: 38px;
+                        font-weight: 700;
+                    }
+    
+                    .position {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .expositors {
+
+        .guests {
+
+            .buttons{
+                flex-direction: row;
+            }
+        
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .expositors {
+
+        .guests {
+
+            .lists {
+                margin: 5rem 0;
+
+                .expositors-list {
+                    flex-direction: row;
+                    
+                    .expositor {
+                        flex-basis: 290px;
+                        margin-top: 1rem;
+                        margin-left: 0.5rem;
+                        margin-right: 0.5rem;
+                    }
+    
+                    .expositor:nth-child(2) {
+                        margin-top: -10rem;
+                    }
+                
+                }
+            }
+        }
+    }
+}

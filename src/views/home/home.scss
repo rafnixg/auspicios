@@ -3,7 +3,10 @@
     .main {
         min-height: 100vh;
         padding-top: 154px;
+        padding-left: 0;
+        padding-right: 0;
         text-align: center;
+        align-items: center;
         background-image: url('../img/backgrounds/home.jpg');
         background-color: rgba(23, 23, 23, 0.27);
         color: $white;
