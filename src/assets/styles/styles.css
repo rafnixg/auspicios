@@ -157,6 +157,7 @@
   background-size: 70%; }
 
 .gold-title {
+  font-family: Axia;
   font-size: 23px;
   color: #937c4c; }
 
@@ -301,6 +302,8 @@ footer {
     max-width: 250px; }
   footer .opacity-4 {
     opacity: 0.4; }
+  footer .lh-15 {
+    line-height: 1.5; }
   footer .form-group label {
     color: #ffffff;
     opacity: 0.4;
@@ -471,7 +474,8 @@ footer {
         font-size: 38px;
         font-weight: 700; }
       .expositors .guests .lists .expositors-list .expositor .position {
-        font-size: 18px;
+        font-family: Axia;
+        font-size: 23px;
         font-weight: 400; }
 
 @media (min-width: 769px) {
