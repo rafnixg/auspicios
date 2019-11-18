@@ -1,17 +1,15 @@
 .expositors {
 
     .background {
-        min-height: 85vh;
-        padding-top: 154px;
         background-image: url('../img/backgrounds/expositors.jpg');
     }
     
     .guests {
         position: relative;
 
-        .twilight-blue-subtitle {
+        /*.twilight-blue-subtitle {
             max-width: 385px;
-        }
+        }*/
 
         .buttons {
             display: flex;

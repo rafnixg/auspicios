@@ -1,7 +1,7 @@
 .map {
     display: flex;
     height: 500px;
-    padding: 5rem;
+    padding: 5rem 1rem;
     background-color: #37435c;
 
     .card-place {
@@ -22,5 +22,11 @@
         [class^="flaticon-"]:before {
             font-size: 30px;
         }
+    }
+}
+
+@media (min-width: 769px) {
+    .map {
+        padding: 5rem;
     }
 }

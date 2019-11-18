@@ -1,16 +1,14 @@
 .schedule {
     .background {
-        min-height: 85vh;
-        padding-top: 154px;
         background-image: url('../img/backgrounds/schedule.jpg');
     }
 
     .diary {
         position: relative;
         
-        .twilight-blue-subtitle {
+        /*.twilight-blue-subtitle {
             max-width: 430px;
-        }   
+        } */
 
         .days {
             display: flex;

@@ -1,4 +1,20 @@
 @font-face {
+    font-family: Axia;
+    src: local(Axia-Regular), url('fonts/axia-regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: AxiaBold;
+    src: local(Axia-Bold), url('fonts/axia-bold.otf') format("opentype");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+/*@font-face {
     font-family: DoHyeon;
     src: local(DoHyeon-Regular),
         url(/path/to/DoHyeon-Regular.woff2) format("woff2"),
@@ -55,17 +71,6 @@
 
 @font-face {
     font-family: Montserrat;
-    src: local(Montserrat-Medium),
-        url(/path/to/Montserrat-Medium.woff2) format("woff2"),
-        url(/path/to/Montserrat-Medium.woff) format("woff"),
-        url(/path/to/Montserrat-Medium.ttf) format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-}
-
-@font-face {
-    font-family: Montserrat;
     src: local(Montserrat-SemiBold),
         url(/path/to/Montserrat-SemiBold.woff2) format("woff2"),
         url(/path/to/Montserrat-SemiBold.woff) format("woff"),
@@ -106,4 +111,4 @@
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
-}
+}*/

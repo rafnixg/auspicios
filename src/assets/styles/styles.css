@@ -1,3 +1,6 @@
+.ff-axia {
+  font-family: Axia; }
+
 .fs-12 {
   font-size: 12px; }
 
@@ -54,6 +57,9 @@
 
 .fc-twilight-blue {
   color: #0d3666; }
+
+.ff-axia {
+  font-family: Axia; }
 
 .fs-12 {
   font-size: 12px; }
@@ -129,6 +135,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: darken; }
+  .background.view {
+    min-height: 85vh;
+    padding-top: 154px; }
 
 .trama > * {
   position: relative;
@@ -164,7 +173,6 @@
     display: block; }
   .title-with-stroke *:first-child {
     color: #ffffff;
-    text-shadow: none;
     -webkit-text-stroke: 0px; }
 
 p,
@@ -254,7 +262,6 @@ input, .form-control {
     font-size: 68px; }
     .title-with-stroke *:first-child {
       color: transparent;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
       -webkit-text-stroke: 1.8px #ffffff; }
   .trama::after {
     background-size: auto; } }
@@ -318,7 +325,7 @@ footer {
 .map {
   display: flex;
   height: 500px;
-  padding: 5rem;
+  padding: 5rem 1rem;
   background-color: #37435c; }
   .map .card-place {
     width: 360px;
@@ -330,6 +337,10 @@ footer {
     box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 3px 4px 0 rgba(0, 0, 0, 0.14); }
     .map .card-place [class^="flaticon-"]:before {
       font-size: 30px; }
+
+@media (min-width: 769px) {
+  .map {
+    padding: 5rem; } }
 
 .home .main {
   min-height: 100vh;
@@ -422,14 +433,13 @@ footer {
     font-size: 52px; } }
 
 .expositors .background {
-  min-height: 85vh;
-  padding-top: 154px;
   background-image: url("../img/backgrounds/expositors.jpg"); }
 
 .expositors .guests {
-  position: relative; }
-  .expositors .guests .twilight-blue-subtitle {
-    max-width: 385px; }
+  position: relative;
+  /*.twilight-blue-subtitle {
+            max-width: 385px;
+        }*/ }
   .expositors .guests .buttons {
     display: flex;
     flex-direction: column;
@@ -482,14 +492,13 @@ footer {
         margin-top: -10rem; } }
 
 .schedule .background {
-  min-height: 85vh;
-  padding-top: 154px;
   background-image: url("../img/backgrounds/schedule.jpg"); }
 
 .schedule .diary {
-  position: relative; }
-  .schedule .diary .twilight-blue-subtitle {
-    max-width: 430px; }
+  position: relative;
+  /*.twilight-blue-subtitle {
+            max-width: 430px;
+        } */ }
   .schedule .diary .days {
     display: flex;
     flex-wrap: wrap;
@@ -507,6 +516,207 @@ footer {
         .schedule .diary .days .day > div.time.fuchsia {
           background-color: #ff61de; }
 
+.stay .background {
+  background-image: url("../img/backgrounds/stay.jpg"); }
+
+.stay .accommodation {
+  position: relative; }
+  .stay .accommodation .container {
+    padding-top: 3rem;
+    padding-bottom: 0; }
+    .stay .accommodation .container .titles {
+      padding: 0 2rem; }
+  .stay .accommodation .hotels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem; }
+    .stay .accommodation .hotels > div {
+      width: 100%;
+      height: 650px;
+      text-align: center; }
+    .stay .accommodation .hotels .divider {
+      width: 80%;
+      height: 2px;
+      margin: 1.5rem auto;
+      background-color: #937c4c; }
+    .stay .accommodation .hotels .hotel-marriot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 2rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("../img/backgrounds/hotel-marriot.jpg");
+      color: #ffffff; }
+      .stay .accommodation .hotels .hotel-marriot .name {
+        font-family: Axia;
+        font-size: 47px; }
+      .stay .accommodation .hotels .hotel-marriot .location {
+        margin-top: 1.5rem;
+        font-size: 24px;
+        font-weight: 500; }
+    .stay .accommodation .hotels .locations {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem; }
+      .stay .accommodation .hotels .locations [class^="flaticon-"]:before {
+        font-size: 60px;
+        color: #191919; }
+      .stay .accommodation .hotels .locations .where-to-go {
+        font-family: AxiaBold;
+        font-size: 32px;
+        color: #937c4c; }
+      .stay .accommodation .hotels .locations .item .title {
+        margin-bottom: 0.5rem;
+        font-size: 18px;
+        font-weight: 600;
+        color: #0d3666; }
+      .stay .accommodation .hotels .locations .item .description {
+        max-width: 230px;
+        margin: auto;
+        font-size: 12px;
+        font-weight: 500; }
+    .stay .accommodation .hotels .hyatt-centric .wallpaper {
+      width: 100%;
+      height: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("../img/backgrounds/hyatt-centric.jpg"); }
+    .stay .accommodation .hotels .hyatt-centric .content {
+      padding: 2rem 0.5rem; }
+
+@media (min-width: 769px) {
+  .stay .accommodation .container {
+    padding-left: 2rem;
+    padding-left: 2rem; }
+  .stay .accommodation .hotels {
+    padding: 0 2rem; }
+    .stay .accommodation .hotels > div {
+      max-width: 430px; } }
+
+@media (min-width: 992px) {
+  .stay .accommodation .hotels {
+    flex-direction: row; } }
+
+@font-face {
+  font-family: Axia;
+  src: local(Axia-Regular), url("fonts/axia-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; }
+
+@font-face {
+  font-family: AxiaBold;
+  src: local(Axia-Bold), url("fonts/axia-bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal; }
+
+/*@font-face {
+    font-family: DoHyeon;
+    src: local(DoHyeon-Regular),
+        url(/path/to/DoHyeon-Regular.woff2) format("woff2"),
+        url(/path/to/DoHyeon-Regular.woff) format("woff"),
+        url(/path/to/DoHyeon-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Gugi;
+    src: local(Gugi-Regular),
+        url(/path/to/Gugi-Regular.woff2) format("woff2"),
+        url(/path/to/Gugi-Regular.woff) format("woff"),
+        url(/path/to/Gugi-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: local(Montserrat-ExtraLight),
+        url(/path/to/Montserrat-ExtraLight.woff2) format("woff2"),
+        url(/path/to/Montserrat-ExtraLight.woff) format("woff"),
+        url(/path/to/Montserrat-ExtraLight.ttf) format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: local(Montserrat-Light),
+        url(/path/to/Montserrat-Light.woff2) format("woff2"),
+        url(/path/to/Montserrat-Light.woff) format("woff"),
+        url(/path/to/Montserrat-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: local(Montserrat-Regular),
+        url(/path/to/Montserrat-Regular.woff2) format("woff2"),
+        url(/path/to/Montserrat-Regular.woff) format("woff"),
+        url(/path/to/Montserrat-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: local(Montserrat-SemiBold),
+        url(/path/to/Montserrat-SemiBold.woff2) format("woff2"),
+        url(/path/to/Montserrat-SemiBold.woff) format("woff"),
+        url(/path/to/Montserrat-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: local(Montserrat-Bold),
+        url(/path/to/Montserrat-Bold.woff2) format("woff2"),
+        url(/path/to/Montserrat-Bold.woff) format("woff"),
+        url(/path/to/Montserrat-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: local(Montserrat-ExtraBold),
+        url(/path/to/Montserrat-ExtraBold.woff2) format("woff2"),
+        url(/path/to/Montserrat-ExtraBold.woff) format("woff"),
+        url(/path/to/Montserrat-ExtraBold.ttf) format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: SFProText;
+    src: local(SFProText-Regular),
+        url(/path/to/SFProText-Regular.woff2) format("woff2"),
+        url(/path/to/SFProText-Regular.woff) format("woff"),
+        url(/path/to/SFProText-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}*/
 *, *::after, *::before,
 body, html {
   -webkit-box-sizing: border-box;

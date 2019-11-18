@@ -34,5 +34,14 @@ router.get('/schedule', (req, res) => res.render(
     }
 ))
 
+// Stay Page
+router.get('/stay', (req, res) => res.render(
+    'stay/stay.ejs', 
+    { 
+        title: 'Stay'
+    }
+))
+
+
 
 module.exports = router
