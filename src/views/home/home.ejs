@@ -60,25 +60,25 @@
     <section class="schedule container">
         <h2 class="fs-54 fw-extra-bold fc-twilight-blue pb-4 mb-0">Schedule</h2>
         <div class="days mt-4">
-            <% schedule.forEach((days, i) => { %>
+            <% schedule.forEach((day, i) => { %>
                 <div class="day">
                     <div class="text-center">
-                        <p class="fs-22 fc-twilight-blue text-center">Day <%= i+1 %></p>
+                        <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
                     </div>
-                    <% days.forEach(day => { %>
+                    <% day.sessions.forEach(session => { %>
                         <div class="time <%= day.class %>">
-                            <p class="fs-20 fc-medium fc-twilight-blue"><%= day.name %></p>
-                            <p class="fs-15 fc-medium fc-twilight-blue"><%= day.hour %></p>
+                            <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
+                            <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
                         </div>
                         <div class="description">
-                            <p class="fs-15 fc-medium"><%= day.description %></p>
+                            <p class="fs-15 fc-medium"><%= session.description %></p>
                         </div>
                     <% }) %>
                 </div>
             <% }) %>
         </div>
         <div class="text-center">
-            <a href="#" class="btn dark mt-5">
+            <a href="/schedule" class="btn dark mt-5">
                 Ver todo el programa
                 <i class="flaticon-arrow-point-to-right"></i>
             </a>

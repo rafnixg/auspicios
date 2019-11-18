@@ -238,9 +238,7 @@ input, .form-control {
 @media (min-width: 769px) {
   .container {
     padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-bottom: 5rem; }
   .background {
     padding-left: 6rem;
     padding-right: 6rem; }
@@ -360,12 +358,13 @@ footer {
 .home .schedule .days {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #ffffff; }
   .home .schedule .days .day {
-    width: 300px;
+    width: 290px;
     border: 0.3px solid #979797; }
     .home .schedule .days .day > div {
-      padding: 0.5rem; }
+      padding: 1rem; }
       .home .schedule .days .day > div.time.green {
         background-color: #4ae373; }
       .home .schedule .days .day > div.time.turquoise {
@@ -459,6 +458,32 @@ footer {
         margin-right: 0.5rem; }
       .expositors .guests .lists .expositors-list .expositor:nth-child(2) {
         margin-top: -10rem; } }
+
+.schedule .background {
+  min-height: 85vh;
+  padding-top: 154px;
+  background-image: url("../img/backgrounds/schedule.jpg"); }
+
+.schedule .diary {
+  position: relative; }
+  .schedule .diary .twilight-blue-subtitle {
+    max-width: 430px; }
+  .schedule .diary .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff; }
+    .schedule .diary .days .day {
+      width: 290px;
+      border: 0.3px solid #979797; }
+      .schedule .diary .days .day > div {
+        padding: 1rem; }
+        .schedule .diary .days .day > div.time.green {
+          background-color: #4ae373; }
+        .schedule .diary .days .day > div.time.turquoise {
+          background-color: #47e6db; }
+        .schedule .diary .days .day > div.time.fuchsia {
+          background-color: #ff61de; }
 
 *, *::after, *::before,
 body, html {

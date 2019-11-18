@@ -72,13 +72,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            background-color: $white;
 
             .day {
-                width: 300px;
+                width: 290px;
                 border: 0.3px solid #979797;
 
                 > div {
-                    padding: 0.5rem;
+                    padding: 1rem;
     
                     &.time {
     

@@ -1,0 +1,39 @@
+.schedule {
+    .background {
+        min-height: 85vh;
+        padding-top: 154px;
+        background-image: url('../img/backgrounds/schedule.jpg');
+    }
+
+    .diary {
+        position: relative;
+        
+        .twilight-blue-subtitle {
+            max-width: 430px;
+        }   
+
+        .days {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: $white;
+
+            .day {
+                width: 290px;
+                border: 0.3px solid #979797;
+
+                > div {
+                    padding: 1rem;
+    
+                    &.time {
+    
+                        &.green { background-color: $green; }
+                        &.turquoise { background-color: $turquoise; }
+                        &.fuchsia { background-color: $fuchsia; }
+                    }
+                } 
+            }
+        }
+    }
+
+}
