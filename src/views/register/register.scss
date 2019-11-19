@@ -1,0 +1,66 @@
+.register {
+
+    .background {
+        min-height: 50vh;
+        background-image: url('../img/backgrounds/register.jpg');
+    }
+
+    .payment {
+        position: relative;
+
+
+        .nav-tabs {
+            display: flex;
+            justify-content: space-between;
+            border: none;
+
+            .nav-item {
+                margin: 0;
+                flex-basis: 16.66%;
+                max-width: 100px;
+
+                .nav-link {
+                    position: relative;
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    padding: 0;
+                    margin: auto;
+                    border-radius: 50%;
+                    background-color: $white-two;
+                    border: 6px solid $white-two;
+
+                    &.active {
+                        background-color: $white;
+                        border-color: $twilight-blue;
+                    }
+                }
+
+
+                p {
+                    margin-top: 0.5rem;
+                    text-align: center;
+                    font-family: Axia;
+                    font-size: 18px;
+                    color: $gold;
+                }
+
+                &:not(:last-child) {
+
+                    .nav-link::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 6px;
+                        left: 19px;
+                        display: block;
+                        width: 175px;
+                        height: 2px;
+                        background-color: $white-two;
+                    }
+
+                }
+            }
+        }
+    }
+}

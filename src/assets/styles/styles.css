@@ -326,11 +326,20 @@ footer {
         bottom: -30px; } }
 
 .map {
+  position: relative;
   display: flex;
   height: 500px;
   padding: 5rem 1rem;
   background-color: #37435c; }
+  .map #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   .map .card-place {
+    position: relative;
+    z-index: 2;
     width: 360px;
     margin: auto 0;
     padding: 3rem 1.5rem;
@@ -506,10 +515,10 @@ footer {
   .schedule .diary .days {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    background-color: #ffffff; }
+    justify-content: center; }
     .schedule .diary .days .day {
       width: 290px;
+      background-color: #ffffff;
       border: 0.3px solid #979797; }
       .schedule .diary .days .day > div {
         padding: 1rem; }
@@ -608,6 +617,50 @@ footer {
 @media (min-width: 992px) {
   .stay .accommodation .hotels {
     flex-direction: row; } }
+
+.register .background {
+  min-height: 50vh;
+  background-image: url("../img/backgrounds/register.jpg"); }
+
+.register .payment {
+  position: relative; }
+  .register .payment .nav-tabs {
+    display: flex;
+    justify-content: space-between;
+    border: none; }
+    .register .payment .nav-tabs .nav-item {
+      margin: 0;
+      flex-basis: 16.66%;
+      max-width: 100px; }
+      .register .payment .nav-tabs .nav-item .nav-link {
+        position: relative;
+        display: block;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        margin: auto;
+        border-radius: 50%;
+        background-color: #d8d8d8;
+        border: 6px solid #d8d8d8; }
+        .register .payment .nav-tabs .nav-item .nav-link.active {
+          background-color: #ffffff;
+          border-color: #0d3666; }
+      .register .payment .nav-tabs .nav-item p {
+        margin-top: 0.5rem;
+        text-align: center;
+        font-family: Axia;
+        font-size: 18px;
+        color: #937c4c; }
+      .register .payment .nav-tabs .nav-item:not(:last-child) .nav-link::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 19px;
+        display: block;
+        width: 175px;
+        height: 2px;
+        background-color: #d8d8d8; }
 
 @font-face {
   font-family: Axia;

@@ -43,5 +43,15 @@ router.get('/stay', (req, res) => res.render(
 ))
 
 
+// Stay Page
+router.get('/register', (req, res) => res.render(
+    'register/register.ejs', 
+    { 
+        title: 'Register'
+    }
+))
+
+
+
 
 module.exports = router
