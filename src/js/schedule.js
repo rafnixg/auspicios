@@ -10,12 +10,12 @@ const schedule = [
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
-                name: 'Cecilia Roberts',
+                name: 'Jeff Tate',
                 hour: '10.00 - 11.00',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
-                name: 'Cecilia Roberts',
+                name: 'Sean Daniels',
                 hour: '10.00 - 11.00',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             }
@@ -27,17 +27,17 @@ const schedule = [
         sessions: [
             {
             
-                name: 'Cecilia Roberts',
+                name: 'William Hernandez',
                 hour: '10.00 - 11.00',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
-                name: 'Cecilia Roberts',
+                name: 'Jerome Martinez',
                 hour: '10.00 - 11.00',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
-                name: 'Cecilia Roberts',
+                name: 'Nina Terry',
                 hour: '10.00 - 11.00',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             }
@@ -49,17 +49,17 @@ const schedule = [
         sessions: [
             {
             
-                name: 'Cecilia Roberts',
+                name: 'Marguerite Carlson',
                 hour: '10.00 - 11.00',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
-                name: 'Cecilia Roberts',
+                name: 'Eva Norton',
                 hour: '10.00 - 11.00',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
-                name: 'Cecilia Roberts',
+                name: 'Ivan Jefferson',
                 hour: '10.00 - 11.00',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             }

@@ -1,24 +1,27 @@
-$lightblue: #6ee2f5;
-$purpleish-blue: #6454f0;
-$brownish-grey: #5c5c5c;
-$grey: #6f6f6f;
-$light-gold: #ffdf57;
-$gold: #937c4c;
-$black: #191919;
-$steel: #8e8e93;
-$black-5: rgba(0, 0, 0, 0.05);
-$white: #ffffff;
+$green: #4ae373;
+$fuchsia: #ff61de;
+$dark-blue: #00172b;
 $twilight-blue: #0d3666;
 $marine-blue: #003563;
-$dark-blue: #00172b;
-$dark-grey: #202020;
-$light: #d8d8d8;
-$camel: #c1a23d;
 $warm-blue: #3b4fcf;
-$background-light: #f6f6f6;
-$green: #4ae373;
+$purpleish-blue: #6454f0;
+$lightblue: #6ee2f5;
 $turquoise: #47e6db;
-$fuchsia: #ff61de;
+$dark-grey: #202020;
+$grey: #6f6f6f;
+$high-grey: #d4d4d4;
+$light-grey: #979797;
+$brownish-grey: #5c5c5c;
+$mine-grey: #363636;
+$steel: #8e8e93;
+$black: #191919;
+$black-5: rgba(0, 0, 0, 0.05);
+$gold: #937c4c;
+$light-gold: #ffdf57;
+$camel: #c1a23d;
+$light: #d8d8d8;
+$background-light: #f6f6f6;
+$white: #ffffff;
 
 .ff-axia {
     font-family: Axia;
@@ -50,6 +53,10 @@ $fuchsia: #ff61de;
 
 .fs-30 {
     font-size: 30px;
+}
+
+.fs-34 {
+    font-size: 34px;
 }
 
 .fs-40 {
