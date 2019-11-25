@@ -6,18 +6,92 @@
     overflow: hidden;
 
     .nav {
-        ul {
-            width: 100%;
-            //padding: 0 1rem;
-            margin: 2rem 2.5rem;
-            border-radius: 15px;
+        min-height: 100vh;
+        justify-content: flex-end;
+
+        .menu {
+            height: max-content;
+            padding: 10px;
+            margin: 1.25rem 2rem;
+            border-radius: 8px;
+            background-color: $white;
+            box-shadow: 0 2px 32px 18px rgba(0, 0, 0, 0.2);
+
+            .menu-item {
+                display: block;
+                width: 25px;
+                height: 4px;
+                border-radius: 8px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3px;
+                background-color: $mine-grey;
+            }
+
+            p {
+                margin-top: 5px;
+                font-size: 10px;
+                color: $mine-grey;
+            }
+        }
+
+        .navigation-bar {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            z-index: 2;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+            min-height: 100vh;
+            // padding-bottom: 1rem;
+            // border-bottom-left-radius: 15px;
+            // border-bottom-right-radius: 15px;
             background-color: $white;
-    
+            //padding: 0 1rem;
+            //margin: 2rem 2.5rem;
+            //justify-content: space-between;
+
+            /*&.slide-in {
+                animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }*/
+            
             li {
-                padding: 1rem;
+                padding: 1.25rem 0.5rem;
+
+                &.close-x {
+                    padding: 1.25rem 2rem;
+                    margin-left: auto;
+                    font-size: 30px;
+                    font-weight: 500;
+                    color: $mine-grey;
+                }
+
+                &.brands {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    > div {
+                        flex-basis: 33.333%;
+                        padding: 0 0.5rem;
+
+                        &:first-child {
+                            border-right: 1px solid $high-grey;
+                        }
+                    }
+
+                    .alliance {
+                        position: absolute;
+                        top: 0;
+                        left: calc(66.666% - 35px);
+                        font-size: 10px;
+                        font-weight: 500;
+                        color: $twilight-blue;
+                    }
+                }
 
                 a {
                     color: $twilight-blue;
@@ -29,6 +103,14 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .header {
+        .nav {
+            min-height: auto;
         }
     }
 }
