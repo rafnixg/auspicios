@@ -14,10 +14,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background-color: $white;
 
             .day {
                 width: 290px;
+                background-color: $white;
                 border: 0.3px solid #979797;
 
                 > div {

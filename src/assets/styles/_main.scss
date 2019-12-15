@@ -48,42 +48,52 @@
     }    
 }
 
-.gold-title {
-    font-family: Axia;
-    font-size: 23px;
-    color: $gold;
-}
-
-.twilight-blue-subtitle {
-    font-size: 28px;
-    font-weight: 500;
-    color: $twilight-blue;
-}
-
 .title-with-stroke {
+    margin-bottom: 0;
     color: $white;
     font-size: 30px;
     font-weight: 900;
 
     span {
         display: block;
+        margin-bottom: 1.25rem;
     }
     
     *:first-child {
-        color: $white;
-        -webkit-text-stroke: 0px;
+        color: transparent;
+        // text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+        -webkit-text-stroke: 1px $white;
     }
 }
 
-p,
-a,
-span,
+
+.gold-title {
+    font-family: Axia;
+    font-size: 20px;
+    color: $gold;
+}
+
+.twilight-blue-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: $twilight-blue;
+}
+
+.twilight-blue-subtitle {
+    font-size: 25px;
+    font-weight: 500;
+    color: $twilight-blue;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+a,
+span {
     line-height: normal;
 }
 
@@ -187,18 +197,26 @@ input, .form-control {
         padding-right: 6rem;
     }
 
+    .title-with-stroke {
+        *:first-child {
+            -webkit-text-stroke: 1.5px $white;
+        }
+    }
+
+    .gold-title {
+        font-size: 23px;
+    }
+
+    .twilight-blue-title {
+        font-size: 54px;
+    }
+
     .twilight-blue-subtitle {
         font-size: 30px;
     }
 
     .title-with-stroke {
         font-size: 68px;
-    
-        *:first-child {
-            color: transparent;
-            // text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-            -webkit-text-stroke: 1.8px $white;
-        }
     }
 
     .trama::after {
@@ -208,6 +226,7 @@ input, .form-control {
 
 
 @media (min-width: 992px) {
+
     .twilight-blue-subtitle {
         font-size: 40px;
     }
