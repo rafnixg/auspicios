@@ -1,0 +1,53 @@
+<div class="tab-pane fade" id="assistants" role="tabpanel" aria-labelledby="assistants-tab">
+    <div class="my-4">
+        <p class="grey-text">
+            Completa los siguientes campos <br>
+            sobre los asistentes al evento
+        </p>
+    </div>
+    <div id="forms">
+        <form name="assistantForm" action="">
+            <div class="form-group row mb-4">
+                <div class="col-12 col-lg mb-4">
+                    <label for="greeting">Saludo</label>
+                    <input type="text" id="greeting" class="form-control" required>
+                </div>
+                <div class="col-12 col-lg mb-4">
+                    <label for="name">Nombres</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="col-12 col-lg mb-4">
+                    <label for="lastName">Apellidos</label>
+                    <input type="text" id="lastName" class="form-control" required>
+                </div>
+                <div class="col-12 col-lg mb-4">
+                    <label for="organization">Organización</label>
+                    <input type="text" id="organization" class="form-control" required>
+                </div>
+                <div class="col-12 col-lg mb-4">
+                    <label for="position">Cargo</label>
+                    <input type="text" id="position" class="form-control" required>
+                </div>
+                <div class="col-12 col-lg mb-4">
+                    <label for="address">Dirección</label>
+                    <input type="text" id="address" class="form-control" required>
+                </div>
+                <div class="col-12 col-lg mb-4">
+                    <label for="phone">Teléfono</label>
+                    <input type="text" id="phone" class="form-control" required>
+                </div>
+                <div class="col-12 col-lg mb-4">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" class="form-control" required>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="my-5">
+        <button id="addAssistant" class="btn light">
+            Agregar asistente
+            <i class="flaticon-arrow-point-to-right"></i>
+        </button>
+    </div>
+    <%- include('./action-buttons.ejs'); -%>
+</div>

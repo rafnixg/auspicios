@@ -1,0 +1,66 @@
+<div class="tab-pane fade show active" id="data" role="tabpanel" aria-labelledby="data-tab">
+    <div class="mb-5">
+        <p class="grey-text">
+            Completa los datos de la persona <br>
+            encargada del registro
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form action="">
+                <div class="form-group row mb-4">
+                    <label for="greeting" class="col-12 col-md-3">Saludo</label>
+                    <input type="text" id="greeting" class="form-control col-12 col-md-9" required>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="name" class="col-12 col-md-3">Nombres</label>
+                    <input type="text" id="name" class="form-control col-12 col-md-9" required>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="lastName" class="col-12 col-md-3">Apellidos</label>
+                    <input type="text" id="lastName" class="form-control col-12 col-md-9" required>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="organization" class="col-12 col-md-3">Organización</label>
+                    <input type="text" id="organization" class="form-control col-12 col-md-9" required>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="position" class="col-12 col-md-3">Cargo</label>
+                    <input type="text" id="position" class="form-control col-12 col-md-9" required>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="address" class="col-12 col-md-3">Dirección</label>
+                    <input type="text" id="address" class="form-control col-12 col-md-9" required>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="phone" class="col-12 col-md-3">Teléfono</label>
+                    <input type="text" id="phone" class="form-control col-12 col-md-9" required>
+                </div>
+                <div class="form-group row mb-4">
+                    <label for="email" class="col-12 col-md-3">E-mail</label>
+                    <input type="text" id="email" class="form-control col-12 col-md-9" required>
+                    <div class="col-12 col-md-9 offset-md-3 mt-2">
+                        <span class="grey-text">Registrarse con el correo que le otorga la universidad</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="grey-text">Validar registro</p>
+                </div>
+                <div class="form-group row my-5">
+                    <label for="assistant" class="col-12 col-md-6">Participaré como asistente de la conferencia</label>
+                    <div class="col-12 col-md-6 text-center">
+                        <div class="custom-control custom-radio custom-control-inline px-5">
+                            <input type="radio" id="yes" name="yes" class="custom-control-input">
+                            <label class="custom-control-label" for="yes">Sí</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline px-5">
+                            <input type="radio" id="no" name="no" class="custom-control-input">
+                            <label class="custom-control-label" for="no">No</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('./action-buttons.ejs'); -%>
+</div>

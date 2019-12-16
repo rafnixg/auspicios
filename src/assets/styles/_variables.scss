@@ -17,6 +17,7 @@ $steel: #8e8e93;
 $black: #191919;
 $black-5: rgba(0, 0, 0, 0.05);
 $camel: #c1a23d;
+$gold: #937c4c;
 $white: #ffffff;
 $white-two: #d8d8d8;
 $twilight-blue: #0d3666;
@@ -29,6 +30,30 @@ $white: #ffffff;
 
 .ff-axia {
     font-family: Axia;
+}
+
+.ff-axia-bold {
+    font-family: AxiaBold;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-extra-bold {
+    font-weight: 800;
+}
+
+.fw-black {
+    font-weight: 900;
 }
 
 .fs-12 {
@@ -55,6 +80,14 @@ $white: #ffffff;
     font-size: 23px;
 }
 
+.fs-25 {
+    font-size: 23px;
+}
+
+.fs-27 {
+    font-size: 27px;
+}
+
 .fs-30 {
     font-size: 30px;
 }
@@ -63,8 +96,20 @@ $white: #ffffff;
     font-size: 34px;
 }
 
+.fs-35 {
+    font-size: 35px;
+}
+
+.fs-39 {
+    font-size: 39px;
+}
+
 .fs-40 {
     font-size: 40px;
+}
+
+.fs-50 {
+    font-size: 50px;
 }
 
 .fs-54 {
@@ -73,26 +118,6 @@ $white: #ffffff;
 
 .fs-68 {
     font-size: 68px;
-}
-
-.fw-medium {
-    font-weight: 500;
-}
-
-.fw-semi-bold {
-    font-weight: 600;
-}
-
-.fw-bold {
-    font-weight: 700;
-}
-
-.fw-extra-bold {
-    font-weight: 800;
-}
-
-.fw-black {
-    font-weight: 900;
 }
 
 .fc-white {

@@ -10,7 +10,8 @@ router.get('/', (req, res) => res.render(
     'home/home.ejs', 
     { 
         title: 'Auspicios',
-        sponsors,
+        sponsors: sponsors.sponsors,
+        sponsorTypes: sponsors.sponsorTypes,
         schedule
     }
 ))

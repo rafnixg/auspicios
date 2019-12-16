@@ -58,7 +58,36 @@
                         height: 2px;
                         background-color: $white-two;
                     }
+                }
+            }
+        }
 
+        .tab-content {
+            .btn.light {
+                border: solid 1px $marine-blue;
+            }
+
+            [class="flaticon-pos"]:before {
+                color: #38dd62;
+                font-size: 180px;
+            }
+        }
+
+        .form-group {
+
+            label {
+                color: $grey;
+                font-size: 15px;
+            }
+    
+            input {
+                color: $grey;
+                font-size: 15px;
+                // border-bottom: 1px solid rgba($color: $grey, $alpha: 0.4);
+    
+                &.active {
+                    // color: $white;
+                    border-color: $grey;   
                 }
             }
         }

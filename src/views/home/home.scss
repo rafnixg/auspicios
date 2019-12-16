@@ -2,7 +2,7 @@
 
     .main {
         min-height: 100vh;
-        padding-top: 100px;
+        padding-top: 170px;
         padding-bottom: 100px;
         padding-left: 1rem;
         padding-right: 1rem;
@@ -12,9 +12,16 @@
         background-color: rgba(23, 23, 23, 0.27);
         color: $white;
     
-        .subtitle {
-            font-size: 25px;
-            font-weight: 600;
+        .main-text {
+            line-height: 30px;
+            padding: 0.75rem 0;
+            margin: 0.5rem 0;
+            border-top: 1px solid $white;
+            border-bottom: 1px solid $white;
+        }
+
+        p {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
     }
 
@@ -118,6 +125,11 @@
             border-radius: 15px;
             background-color: $twilight-blue;
 
+            > div {
+                img {
+                    max-width: 500px;
+                }
+            }
         }
     }
 
@@ -125,7 +137,9 @@
 
         .days {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
+            align-items: center;
             justify-content: center;
             background-color: $white;
 
@@ -154,7 +168,7 @@
         position: relative;
         padding: 7rem 1rem;
         background-image: url('../img/backgrounds/know-us.jpg');
-        background-size: auto;
+        background-size: 100%;
         background-color: rgba(13, 54, 102, 0.42);
     }
 
@@ -197,14 +211,6 @@
             }
         }
 
-        .about {
-            .video-container { 
-                .video {
-                    height: 550px;
-                }
-            }
-        }
-
         .countdown {
 
             .timer {
@@ -219,10 +225,44 @@
             }
         }
 
+        .about {
+            .video-container { 
+                .video {
+                    height: 550px;
+                }
+            }
+        }
+
+        .expositors {
+    
+            .slider {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 0 4rem;
+
+                > div {
+                    flex: 1;
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .home {
         .schedule {
             .days {
+                flex-direction: row;
+                align-items: flex-start;
+
                 .day:not(:last-child) {
                     margin-bottom: 0;
+                }
+
+                .collapse {
+                    display: block !important;
                 }
             }
         }

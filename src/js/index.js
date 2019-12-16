@@ -46,34 +46,62 @@ inputs.forEach(input => {
 const video = document.getElementById('video')
 const playButton = document.getElementById('play')
 
-playButton.addEventListener('click', (event) => {
-    if (video.paused) {
-        video.play()
-        playButton.classList.add('fade-out')
-    } else {
-        video.pause()
-    }
-    
-})
+if (video && playButton) {
+    playButton.addEventListener('click', (event) => {
+        if (video.paused) {
+            video.play()
+            playButton.classList.add('fade-out')
+        } else {
+            video.pause()
+        }
+        
+    })
 
-playButton.addEventListener('mouseover', (event) => {
-    playButton.classList.remove('fade-out')
-    playButton.classList.add('fade-in')
-})
-
-video.addEventListener('mouseover', (event) => {
-    if (!video.paused) {
+    playButton.addEventListener('mouseover', (event) => {
         playButton.classList.remove('fade-out')
         playButton.classList.add('fade-in')
-    }
-})
+    })
+    
+    video.addEventListener('mouseover', (event) => {
+        if (!video.paused) {
+            playButton.classList.remove('fade-out')
+            playButton.classList.add('fade-in')
+        }
+    })
+    
+    video.addEventListener('mouseout', (event) => {
+        if (!video.paused) {
+            playButton.classList.remove('fade-in')
+            playButton.classList.add('fade-out')
+        }
+    })
+}
 
-video.addEventListener('mouseout', (event) => {
-    if (!video.paused) {
-        playButton.classList.remove('fade-in')
-        playButton.classList.add('fade-out')
-    }
-})
+
+// REGISTER TABS
+const nextButton = document.getElementById('next')
+
+if (nextButton) {
+    nextButton.addEventListener('click', (event) => {
+        // jQuery for Boostrap Tabs
+        $('a[aria-selected=true]').parent('li').next().children('a').tab('show')
+    })
+}
+
+// REGISTER FORM 
+const addAssistantButton = document.getElementById('addAssistant')
+
+if (addAssistantButton) {
+    addAssistantButton.addEventListener('click', (event) => {
+        const forms = document.getElementsByName('assistantForm')
+        const form = document.createElement('form')
+        form.setAttribute('name', 'assistantForm')
+        form.innerHTML = forms[0].innerHTML
+
+        const formsContainer = document.getElementById('forms')
+        formsContainer.appendChild(form)
+    })
+}
 
 
 // MAP

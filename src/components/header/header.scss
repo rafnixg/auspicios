@@ -45,13 +45,7 @@
             flex-direction: column;
             width: 100%;
             min-height: 100vh;
-            // padding-bottom: 1rem;
-            // border-bottom-left-radius: 15px;
-            // border-bottom-right-radius: 15px;
             background-color: $white;
-            //padding: 0 1rem;
-            //margin: 2rem 2.5rem;
-            //justify-content: space-between;
 
             /*&.slide-in {
                 animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -73,6 +67,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    padding-top: 0;
+                    padding-bottom: 0;
 
                     > div {
                         flex-basis: 33.333%;
@@ -85,7 +81,7 @@
 
                     .alliance {
                         position: absolute;
-                        top: 0;
+                        top: -20px;
                         left: calc(66.666% - 35px);
                         font-size: 10px;
                         font-weight: 500;
@@ -107,10 +103,43 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
     .header {
         .nav {
             min-height: auto;
+
+            .menu {
+                display: none;
+            }
+
+            .navigation-bar {
+                position: relative;
+                left: 0;
+                flex-direction: row;
+                justify-content: space-evenly;
+                min-height: auto;
+                margin: 2rem 2.5rem;
+                padding: 1rem;
+                padding-top: 1.5rem;
+                border-radius: 15px;
+
+                li {
+                    &:first-child {
+                        display: none;
+                    }
+
+                    &.brands {
+                        .alliance {
+                            position: absolute;
+                            top: -10px;
+                            left: calc(66.666% - 35px);
+                            font-size: 10px;
+                            font-weight: 500;
+                            color: $twilight-blue;
+                        }
+                    }
+                }
+            }
         }
     }
 }
