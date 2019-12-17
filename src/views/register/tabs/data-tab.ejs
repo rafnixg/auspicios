@@ -39,11 +39,11 @@
                 <div class="form-group row mb-4">
                     <label for="email" class="col-12 col-md-3">E-mail</label>
                     <input type="text" id="email" class="form-control col-12 col-md-9" required>
-                    <div class="col-12 col-md-9 offset-md-3 mt-2">
+                    <div class="col-12 col-md-9 offset-md-3 mt-2 <%= (registerType !== 'student' ? 'd-none' : '') %>">
                         <span class="grey-text">Registrarse con el correo que le otorga la universidad</span>
                     </div>
                 </div>
-                <div>
+                <div class="<%= (registerType !== 'student' ? 'd-none' : '') %>"">
                     <p class="grey-text">Validar registro</p>
                 </div>
                 <div class="form-group row my-5">

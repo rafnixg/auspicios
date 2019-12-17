@@ -27,6 +27,7 @@
 
 
 .trama {
+    position: relative;
 
     > * {
         position: relative;
@@ -46,6 +47,13 @@
         background-position: left bottom;
         background-size: 70%;
     }    
+
+    &.right {
+        &::after {
+            background-position: bottom right;
+            background-image: url('../img/backgrounds/trama2.png');
+        }
+    }
 }
 
 .title-with-stroke {
@@ -174,36 +182,6 @@ img {
 [class^="flaticon-"]:before {
     margin-left: 0px;
     font-size: 14px;
-}
-
-.form-group {
-    position: relative;
-}
-
-label {
-    padding-left: 0 !important;
-    margin-bottom: 1rem;
-    transition: all 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-}
-
-input, .form-control {
-    height: 32px;
-    outline: none;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    background-color: transparent;
-    border: 1px solid $grey; //rgba($color: $white, $alpha: 0.4);
-
-    &.active {
-        background-color: transparent;
-        box-shadow: none;
-    }
-    
-}
-
-.custom-radio {
-    line-height: 24px;
 }
 
 @media (min-width: 769px) {

@@ -1,0 +1,39 @@
+.form-group {
+    position: relative;
+}
+
+label {
+    padding-left: 0 !important;
+    margin-bottom: 1rem;
+    transition: all 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+input, .form-control {
+    height: 32px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid rgba($color: $grey, $alpha: 0.6);
+
+    &.active {
+        background-color: transparent;
+    }
+
+    &:focus {
+        box-shadow: none;
+        border-color: $grey;
+    }
+    
+}
+
+.custom-radio {
+    line-height: 24px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: $twilight-blue;
+    box-shadow: none;
+    border: none;
+}

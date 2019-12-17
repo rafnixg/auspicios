@@ -227,6 +227,36 @@
     font-style: normal;
     font-stretch: normal;
 }*/
+.form-group {
+  position: relative; }
+
+label {
+  padding-left: 0 !important;
+  margin-bottom: 1rem;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+input, .form-control {
+  height: 32px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid rgba(111, 111, 111, 0.6); }
+  input.active, .form-control.active {
+    background-color: transparent; }
+  input:focus, .form-control:focus {
+    box-shadow: none;
+    border-color: #6f6f6f; }
+
+.custom-radio {
+  line-height: 24px; }
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #0d3666;
+  box-shadow: none;
+  border: none; }
+
 .ff-axia {
   font-family: Axia; }
 
@@ -329,22 +359,26 @@
     min-height: 85vh;
     padding-top: 154px; }
 
-.trama > * {
-  position: relative;
-  z-index: 2; }
-
-.trama::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/backgrounds/trama.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 70%; }
+.trama {
+  position: relative; }
+  .trama > * {
+    position: relative;
+    z-index: 2; }
+  .trama::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/backgrounds/trama.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 70%; }
+  .trama.right::after {
+    background-position: bottom right;
+    background-image: url("../img/backgrounds/trama2.png"); }
 
 .title-with-stroke {
   margin-bottom: 0;
@@ -438,29 +472,6 @@ img {
 [class^="flaticon-"]:before {
   margin-left: 0px;
   font-size: 14px; }
-
-.form-group {
-  position: relative; }
-
-label {
-  padding-left: 0 !important;
-  margin-bottom: 1rem;
-  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-
-input, .form-control {
-  height: 32px;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  background-color: transparent;
-  border: 1px solid #6f6f6f; }
-  input.active, .form-control.active {
-    background-color: transparent;
-    box-shadow: none; }
-
-.custom-radio {
-  line-height: 24px; }
 
 @media (min-width: 769px) {
   .container {
@@ -985,7 +996,7 @@ footer {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-image: url("../img/backgrounds/hyatt-centric.jpg"); }
+      background-image: url("../img/backgrounds/restaurant.jpg"); }
     .stay .accommodation .hotels .hyatt-centric .content {
       padding: 2rem 0.5rem; }
 
