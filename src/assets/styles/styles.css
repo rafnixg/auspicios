@@ -1061,6 +1061,14 @@ footer {
   .register .payment .tab-content [class="flaticon-pos"]:before {
     color: #38dd62;
     font-size: 180px; }
+  .register .payment .tab-content .radios {
+    margin: 3rem 0; }
+    .register .payment .tab-content .radios .radio {
+      margin: 3rem 0;
+      text-align: center; }
+      .register .payment .tab-content .radios .radio p:first-child {
+        height: 38px;
+        margin-bottom: 3rem; }
   .register .payment .form-group label {
     color: #6f6f6f;
     font-size: 15px; }

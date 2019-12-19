@@ -43,18 +43,25 @@
                         <span class="grey-text">Registrarse con el correo que le otorga la universidad</span>
                     </div>
                 </div>
-                <div class="<%= (registerType !== 'student' ? 'd-none' : '') %>"">
+                <div class="form-group row mb-4 <%= (registerType !== 'delegate' ? 'd-none' : '') %>">
+                    <label for="promocode" class="col-12 col-md-3">Promocode</label>
+                    <input type="text" id="promocode" class="form-control col-12 col-md-9" required>
+                    <div class="col-12 col-md-9 offset-md-3 mt-2 <%= (registerType !== 'student' ? 'd-none' : '') %>">
+                        <span class="grey-text">Registrarse con el correo que le otorga la universidad</span>
+                    </div>
+                </div>
+                <div class="<%= (registerType !== 'student' ? 'd-none' : '') %>">
                     <p class="grey-text">Validar registro</p>
                 </div>
                 <div class="form-group row my-5">
                     <label for="assistant" class="col-12 col-md-6">Participaré como asistente de la conferencia</label>
                     <div class="col-12 col-md-6 text-center">
                         <div class="custom-control custom-radio custom-control-inline px-5">
-                            <input type="radio" id="yes" name="yes" class="custom-control-input">
+                            <input type="radio" id="yes" name="assistant" class="custom-control-input">
                             <label class="custom-control-label" for="yes">Sí</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline px-5">
-                            <input type="radio" id="no" name="no" class="custom-control-input">
+                            <input type="radio" id="no" name="assistant" class="custom-control-input">
                             <label class="custom-control-label" for="no">No</label>
                         </div>
                     </div>
@@ -62,5 +69,4 @@
             </form>
         </div>
     </div>
-    <%- include('./action-buttons.ejs'); -%>
 </div>

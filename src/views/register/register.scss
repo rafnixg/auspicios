@@ -63,6 +63,7 @@
         }
 
         .tab-content {
+
             .btn.light {
                 border: solid 1px $marine-blue;
             }
@@ -70,6 +71,20 @@
             [class="flaticon-pos"]:before {
                 color: #38dd62;
                 font-size: 180px;
+            }
+
+            .radios {
+                margin: 3rem 0;
+
+                .radio {
+                    margin: 3rem 0;
+                    text-align: center;
+
+                    p:first-child {
+                        height: 38px;
+                        margin-bottom: 3rem;
+                    }
+                }
             }
         }
 

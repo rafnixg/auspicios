@@ -84,6 +84,7 @@ const nextButton = document.getElementById('next')
 if (nextButton) {
     nextButton.addEventListener('click', (event) => {
         // jQuery for Boostrap Tabs
+        console.log($('a[aria-selected=true]'));
         $('a[aria-selected=true]').parent('li').next().children('a').tab('show')
     })
 }
