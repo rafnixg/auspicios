@@ -4,7 +4,7 @@ const router = express.Router()
 const sponsors = require('../js/sponsors')
 const expositors = require('../js/expositors')
 const schedule = require('../js/schedule')
-const registerType = require('../js/register')
+const { registerType, tickets } = require('../js/register')
 
 // Home Page
 router.get('/', (req, res) => res.render(
@@ -50,7 +50,8 @@ router.get('/register', (req, res) => res.render(
     'register/register.ejs', 
     { 
         title: 'Register',
-        registerType
+        registerType,
+        tickets
     }
 ))
 

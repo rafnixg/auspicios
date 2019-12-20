@@ -4,6 +4,9 @@
 .ff-axia-bold {
   font-family: AxiaBold; }
 
+.fw-extra-light {
+  font-weight: 200; }
+
 .fw-medium {
   font-weight: 500; }
 
@@ -72,6 +75,12 @@
 
 .fc-grey {
   color: #6f6f6f; }
+
+.fc-light-grey {
+  color: #979797; }
+
+.fc-grey-b {
+  color: #bbbbbb; }
 
 .fc-gold {
   color: #937c4c; }
@@ -263,6 +272,9 @@ input, .form-control {
 .ff-axia-bold {
   font-family: AxiaBold; }
 
+.fw-extra-light {
+  font-weight: 200; }
+
 .fw-medium {
   font-weight: 500; }
 
@@ -331,6 +343,12 @@ input, .form-control {
 
 .fc-grey {
   color: #6f6f6f; }
+
+.fc-light-grey {
+  color: #979797; }
+
+.fc-grey-b {
+  color: #bbbbbb; }
 
 .fc-gold {
   color: #937c4c; }
@@ -1069,6 +1087,21 @@ footer {
       .register .payment .tab-content .radios .radio p:first-child {
         height: 38px;
         margin-bottom: 3rem; }
+  .register .payment .tab-content .ticket {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-top: 4px solid #52c081; }
+  .register .payment .tab-content .tdc-form label {
+    margin-bottom: .5rem;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.8;
+    color: #979797;
+    text-transform: uppercase; }
+  .register .payment .tab-content .tdc-form .form-control {
+    height: 54px;
+    border: solid 1px #979797; }
   .register .payment .form-group label {
     color: #6f6f6f;
     font-size: 15px; }

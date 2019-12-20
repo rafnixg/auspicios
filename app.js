@@ -6,6 +6,7 @@ const path = require('path')
 const app = express();
 
 app.use(express.static(__dirname + '/src/assets'))
+app.use(express.static(__dirname + '/src/js'))
 app.use(express.static(__dirname + '/src'))
 
 // EJS

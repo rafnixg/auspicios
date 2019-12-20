@@ -1,4 +1,5 @@
 $green: #4ae373;
+$emerald: #52c081;
 $fuchsia: #ff61de;
 $dark-blue: #00172b;
 $twilight-blue: #0d3666;
@@ -9,6 +10,7 @@ $lightblue: #6ee2f5;
 $turquoise: #47e6db;
 $dark-grey: #202020;
 $grey: #6f6f6f;
+$grey-b: #bbbbbb;
 $high-grey: #d4d4d4;
 $light-grey: #979797;
 $brownish-grey: #5c5c5c;
@@ -34,6 +36,10 @@ $white: #ffffff;
 
 .ff-axia-bold {
     font-family: AxiaBold;
+}
+
+.fw-extra-light {
+    font-weight: 200;
 }
 
 .fw-medium {
@@ -126,6 +132,14 @@ $white: #ffffff;
 
 .fc-grey {
     color: $grey;
+}
+
+.fc-light-grey {
+    color: $light-grey;
+}
+
+.fc-grey-b {
+    color: $grey-b;
 }
 
 .fc-gold {

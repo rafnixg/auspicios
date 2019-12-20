@@ -1,6 +1,6 @@
 
-const body = document.body
 
+const body = document.body
 
 // MENU
 const menuButton = document.getElementById('menu')
