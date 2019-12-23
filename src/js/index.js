@@ -23,18 +23,20 @@ closeButton.addEventListener('click', (event) => {
 // INPUTS
 const inputs = document.querySelectorAll('input')
 inputs.forEach(input => {
-    input.addEventListener('focus', (event) => {
-        const focusInput = event.target
-        const label = focusInput.parentNode.children[0]
 
-        focusInput.classList.add('active')
+    const label = input.parentNode.children[0]
+
+    if (input.getAttribute('required')) {
+        label.innerHTML = label.innerHTML + ' <span class="fc-red">*</span>'
+    }
+
+    input.addEventListener('focus', (event) => {
+        input.classList.add('active')
         label.classList.add('active')
     })
 
     input.addEventListener('blur', (event) => {
-        const focusInput = event.target
-        const label = focusInput.parentNode.children[0]
-        focusInput.classList.remove('active')
+        input.classList.remove('active')
 
         if (!input.value) {
             label.classList.remove('active')
@@ -103,7 +105,6 @@ if (addAssistantButton) {
         formsContainer.appendChild(form)
     })
 }
-
 
 // MAP
 function initMap() {

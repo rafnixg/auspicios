@@ -118,19 +118,26 @@
     }
 
     .expositors {
-    
-        .slider {
-            position: relative;
-            padding: 1rem 2rem;
+
+        .trama {
+            margin: 0 3rem;
             border-radius: 15px;
             background-color: $twilight-blue;
 
-            > div {
-                img {
-                    max-width: 500px;
+            .slider {
+                position: relative;
+            
+                > div {
+                    img {
+                        max-width: 500px;
+                        max-height: 500px;
+                    }
                 }
+    
             }
+
         }
+    
     }
 
     .schedule {
@@ -239,7 +246,6 @@
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                margin: 0 4rem;
 
                 > div {
                     flex: 1;

@@ -88,6 +88,12 @@
 .fc-twilight-blue {
   color: #0d3666; }
 
+.fc-marine-blue {
+  color: #003563; }
+
+.fc-red {
+  color: #ff5d5d; }
+
 @keyframes fade-in {
   0% {
     opacity: 0; }
@@ -356,6 +362,12 @@ input, .form-control {
 .fc-twilight-blue {
   color: #0d3666; }
 
+.fc-marine-blue {
+  color: #003563; }
+
+.fc-red {
+  color: #ff5d5d; }
+
 .container {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -490,6 +502,24 @@ img {
 [class^="flaticon-"]:before {
   margin-left: 0px;
   font-size: 14px; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 1; }
+  .carousel-control-prev .flaticon-arrow-point-to-right,
+  .carousel-control-next .flaticon-arrow-point-to-right {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #ffffff; }
+    .carousel-control-prev .flaticon-arrow-point-to-right::before,
+    .carousel-control-next .flaticon-arrow-point-to-right::before {
+      color: #0d3666; }
+    .carousel-control-prev .flaticon-arrow-point-to-right.rotate,
+    .carousel-control-next .flaticon-arrow-point-to-right.rotate {
+      transform: rotate(180deg); }
 
 @media (min-width: 769px) {
   .container {
@@ -774,13 +804,15 @@ footer {
       border-top: 15px solid transparent;
       border-bottom: 15px solid transparent; }
 
-.home .expositors .slider {
-  position: relative;
-  padding: 1rem 2rem;
+.home .expositors .trama {
+  margin: 0 3rem;
   border-radius: 15px;
   background-color: #0d3666; }
-  .home .expositors .slider > div img {
-    max-width: 500px; }
+  .home .expositors .trama .slider {
+    position: relative; }
+    .home .expositors .trama .slider > div img {
+      max-width: 500px;
+      max-height: 500px; }
 
 .home .schedule .days {
   display: flex;
@@ -842,8 +874,7 @@ footer {
   .home .expositors .slider {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    margin: 0 4rem; }
+    align-items: center; }
     .home .expositors .slider > div {
       flex: 1;
       max-width: 500px; } }
@@ -1010,13 +1041,21 @@ footer {
         font-weight: 500; }
     .stay .accommodation .hotels .hyatt-centric .wallpaper {
       width: 100%;
-      height: 50%;
+      height: 100%;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-image: url("../img/backgrounds/restaurant.jpg"); }
     .stay .accommodation .hotels .hyatt-centric .content {
       padding: 2rem 0.5rem; }
+    .stay .accommodation .hotels .carousel-control-prev,
+    .stay .accommodation .hotels .carousel-control-next {
+      width: 20%; }
+      .stay .accommodation .hotels .carousel-control-prev .flaticon-arrow-point-to-right,
+      .stay .accommodation .hotels .carousel-control-next .flaticon-arrow-point-to-right {
+        width: 40px;
+        height: 40px;
+        padding: 10px; }
 
 @media (min-width: 769px) {
   .stay .accommodation .container {
@@ -1087,7 +1126,34 @@ footer {
       .register .payment .tab-content .radios .radio p:first-child {
         height: 38px;
         margin-bottom: 3rem; }
+  .register .payment .tab-content .tickets-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; }
+    .register .payment .tab-content .tickets-head .text {
+      font-size: 18px;
+      color: #0d3666; }
+      .register .payment .tab-content .tickets-head .text span {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        padding: 4px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 13px;
+        color: #937c4c;
+        background-color: #0d3666; }
+    .register .payment .tab-content .tickets-head .line {
+      flex: 1;
+      height: 2px;
+      margin: 0 1rem;
+      background-color: #0d3666; }
+    .register .payment .tab-content .tickets-head .price {
+      font-size: 25px;
+      font-weight: bold;
+      color: #0d3666; }
   .register .payment .tab-content .ticket {
+    height: 154px;
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -1102,6 +1168,29 @@ footer {
   .register .payment .tab-content .tdc-form .form-control {
     height: 54px;
     border: solid 1px #979797; }
+  .register .payment .tab-content .student .custom-file {
+    height: 170px; }
+    .register .payment .tab-content .student .custom-file .custom-file-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 400px;
+      height: 170px;
+      margin: auto;
+      padding: 20px !important;
+      text-align: center;
+      border: 2px dashed #003563;
+      font-size: 18px;
+      color: #43434a; }
+      .register .payment .tab-content .student .custom-file .custom-file-label::after {
+        display: none; }
+      .register .payment .tab-content .student .custom-file .custom-file-label:focus {
+        outline: none; }
+  .register .payment .tab-content .student .save-file {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: auto; }
   .register .payment .form-group label {
     color: #6f6f6f;
     font-size: 15px; }
