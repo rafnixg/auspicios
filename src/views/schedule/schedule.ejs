@@ -17,6 +17,7 @@
                     <div class="day">
                         <div class="text-center">
                             <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
+                            <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
                         </div>
                         <% day.sessions.forEach(session => { %>
                             <div class="time <%= day.class %>">

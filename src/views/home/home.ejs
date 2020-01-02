@@ -81,6 +81,7 @@
             <div class="day">
                 <div class="name" data-toggle="collapse" data-target="#<%= day.day %>" aria-expanded="true" aria-controls="<%= day.day %>">
                     <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
+                    <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
                 </div>
                 <div class="collapse <%= i === 0 ? 'show' : '' %>" id="<%= day.day %>"> 
                     <% day.sessions.forEach(session => { %>
@@ -114,7 +115,7 @@
                         <% item.forEach((expositor, j) => { %>
                             <div class="carousel-item <%= i === 0 && j === 0 ? 'active' : '' %>"">
                                 <div class="slider">
-                                    <div>
+                                    <div class="pl-5 ml-5">
                                         <p class="fs-34 fw-bold fc-white mt-2"><%= expositor.firstName %></p>
                                         <p class="fs-34 fw-bold fc-white mb-2"><%= expositor.lastName %></p>
                                         <p class="gold-title mb-0"><%= expositor.position %></p>
@@ -154,7 +155,7 @@
     <section class="know-us background trama">
         <div class="title-with-stroke text-center">
             <p>No te pierdas Lima,</p>
-            <p>conócenos más</p>
+            <p>conoce más</p>
         </div>
         <a href="/stay" class="btn light mx-auto mt-4 mb-5 mb-md-0">
             Ver más
