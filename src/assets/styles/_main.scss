@@ -27,6 +27,7 @@
 
 
 .trama {
+    position: relative;
 
     > * {
         position: relative;
@@ -46,6 +47,13 @@
         background-position: left bottom;
         background-size: 70%;
     }    
+
+    &.right {
+        &::after {
+            background-position: bottom right;
+            background-image: url('../img/backgrounds/trama2.png');
+        }
+    }
 }
 
 .title-with-stroke {
@@ -83,6 +91,12 @@
     font-size: 25px;
     font-weight: 500;
     color: $twilight-blue;
+}
+
+.grey-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: $grey;
 }
 
 h1,
@@ -123,6 +137,7 @@ a {
     border-radius: 40px;
     letter-spacing: 0.3px;
     box-shadow: 0 0 30px 11px rgba(0, 0, 0, 0.05);
+    transition: all 200ms ease-in;
 
     &:focus {
         box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.05);
@@ -131,11 +146,21 @@ a {
     &.light {
         background-color: $white;
         color: rgba($color: $twilight-blue, $alpha: 0.6);
+
+        &:hover {
+            background-color: $marine-blue;
+            color: $white;
+        }
     }
 
     &.dark {
         background-color: $marine-blue;
         color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: rgba($color: $twilight-blue, $alpha: 0.6);
+        }
     }
 }
 
@@ -159,31 +184,26 @@ img {
     font-size: 14px;
 }
 
-label {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    transition: all 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    opacity: 1;
 
-    &.active {
-        opacity: 1;
-        transform: translate(-15px, -18px) scale(.8);
+    .flaticon-arrow-point-to-right {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $white;
+
+        &::before {
+            color: $twilight-blue;
+        }
+
+        &.rotate {
+            transform: rotate(180deg);
+        }
     }
-}
-
-input, .form-control {
-    padding-left: 0;
-    outline: none;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    background-color: transparent;
-
-    &.active {
-        background-color: transparent;
-        box-shadow: none;
-    }
-    
 }
 
 @media (min-width: 769px) {

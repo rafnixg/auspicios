@@ -1,3 +1,6 @@
+const sponsorTypes = [
+    'Elite', 'Lead', 'Premium', 'Gold', 'Silver', 'Media Partner Oficial', 'Media Partners'
+]
 const sponsors = [
     [
         { name: 'Samsung', src: 'img/sponsors/samsung.png' },
@@ -36,4 +39,5 @@ const sponsors = [
     ]
 ]
 
-module.exports = sponsors
+module.exports.sponsorTypes = sponsorTypes
+module.exports.sponsors = sponsors

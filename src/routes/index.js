@@ -4,14 +4,17 @@ const router = express.Router()
 const sponsors = require('../js/sponsors')
 const expositors = require('../js/expositors')
 const schedule = require('../js/schedule')
+const { registerType, tickets, price } = require('../js/register')
 
 // Home Page
 router.get('/', (req, res) => res.render(
     'home/home.ejs', 
     { 
         title: 'Auspicios',
-        sponsors,
-        schedule
+        sponsors: sponsors.sponsors,
+        sponsorTypes: sponsors.sponsorTypes,
+        schedule,
+        expositors
     }
 ))
 
@@ -43,11 +46,14 @@ router.get('/stay', (req, res) => res.render(
 ))
 
 
-// Stay Page
+// Register Page
 router.get('/register', (req, res) => res.render(
     'register/register.ejs', 
     { 
-        title: 'Register'
+        title: 'Register',
+        registerType,
+        tickets,
+        price
     }
 ))
 

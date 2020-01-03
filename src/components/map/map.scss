@@ -1,8 +1,9 @@
 .map {
     position: relative;
     display: flex;
-    height: 500px;
-    padding: 5rem 1rem;
+    align-items: start;
+    height: 600px;
+    padding: 2rem 1rem;
     background-color: #37435c;
 
     #map {
@@ -16,9 +17,9 @@
     .card-place {
         position: relative;
         z-index: 2;
-        width: 360px;
-        margin: auto 0;
-        padding: 3rem 1.5rem;
+        width: 220px;
+        margin: 0 auto;
+        padding: 1.5rem;
         text-align: center;
         border-radius: 15px;
         background-color: $white;
@@ -39,5 +40,13 @@
 @media (min-width: 769px) {
     .map {
         padding: 5rem;
+
+        .card-place {
+            position: relative;
+            z-index: 2;
+            width: 360px;
+            margin: auto 0;
+            padding: 3rem 1.5rem;
+        }
     }
 }

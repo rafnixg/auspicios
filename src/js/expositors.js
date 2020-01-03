@@ -10,8 +10,8 @@ const expositors = [
             instagram: '#'
         },
         {
-            firstName: 'Isaiah',
-            lastName: 'Anderson',
+            firstName: 'Jeanette',
+            lastName: 'McKinney',
             position: 'Vice Presitende Netflix',
             img: 'img/expositors/image2.jpg',
             facebook: '#',
@@ -19,8 +19,8 @@ const expositors = [
             instagram: '#'
         },
         {
-            firstName: 'Isaiah',
-            lastName: 'Anderson',
+            firstName: 'Ann',
+            lastName: 'Herrera',
             position: 'Vice Presitende Netflix',
             img: 'img/expositors/image3.jpg',
             facebook: '#',
@@ -30,8 +30,8 @@ const expositors = [
     ],
     [
         {
-            firstName: 'Isaiah',
-            lastName: 'Anderson',
+            firstName: 'Brent',
+            lastName: 'Ray',
             position: 'Vice Presitende Netflix',
             img: 'img/expositors/image4.jpg',
             facebook: '#',
@@ -39,8 +39,8 @@ const expositors = [
             instagram: '#'
         },
         {
-            firstName: 'Isaiah',
-            lastName: 'Anderson',
+            firstName: 'Jeremy',
+            lastName: 'Robinson',
             position: 'Vice Presitende Netflix',
             img: 'img/expositors/image5.jpg',
             facebook: '#',
@@ -48,8 +48,8 @@ const expositors = [
             instagram: '#'
         },
         {
-            firstName: 'Isaiah',
-            lastName: 'Anderson',
+            firstName: 'Jacob',
+            lastName: 'Saunders',
             position: 'Vice Presitende Netflix',
             img: 'img/expositors/image0.jpg',
             facebook: '#',

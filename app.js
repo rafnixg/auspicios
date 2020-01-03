@@ -6,6 +6,7 @@ const path = require('path')
 const app = express();
 
 app.use(express.static(__dirname + '/src/assets'))
+app.use(express.static(__dirname + '/src/js'))
 app.use(express.static(__dirname + '/src'))
 
 // EJS
@@ -16,5 +17,5 @@ app.set('view engine', 'ejs')
 // Routes
 app.use('/', require('./src/routes/index'))
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, console.log(`Server started on port ${PORT}`))

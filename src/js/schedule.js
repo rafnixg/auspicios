@@ -1,6 +1,7 @@
 const schedule = [
     {
-        day: 'Wednesday',
+        day: 'Preforo',
+        date: '28/09',
         class: 'green',
         sessions: [
             {
@@ -22,7 +23,8 @@ const schedule = [
         ]
     },
     {
-        day: 'Thusday',
+        day: 'Día 1',
+        date: '29/09',
         class: 'turquoise',
         sessions: [
             {
@@ -44,7 +46,8 @@ const schedule = [
         ]
     },
     {
-        day: 'Friday',
+        day: 'Día 2',
+        date: '30/09',
         class: 'fuchsia',
         sessions: [
             {

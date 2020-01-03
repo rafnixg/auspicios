@@ -17,18 +17,24 @@ footer {
 
     .form-group {
         label {
+            position: absolute;
+            top: 10px;
+            left: 0;
             color: $white;
             opacity: 0.4;
             font-size: 13px;
 
             &.active {
                 opacity: 1;
+                transform: translate(-12px, -20px) scale(.8);
             }
         }
 
         input {
+            padding-left: 0;
             color: $white;
             font-size: 13px;
+            border: none;
             border-bottom: 1px solid rgba($color: $white, $alpha: 0.4);
 
             &.active {

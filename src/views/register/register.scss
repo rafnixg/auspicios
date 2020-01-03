@@ -58,7 +58,152 @@
                         height: 2px;
                         background-color: $white-two;
                     }
+                }
+            }
+        }
 
+        .tab-content {
+
+            .btn.light {
+                border: solid 1px $marine-blue;
+            }
+
+            [class="flaticon-pos"]:before {
+                color: #38dd62;
+                font-size: 180px;
+            }
+
+            .radios {
+                margin: 3rem 0;
+
+                .radio {
+                    margin: 3rem 0;
+                    text-align: center;
+
+                    p:first-child {
+                        height: 38px;
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+
+            .tickets-head {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+
+                .text {
+                    font-size: 18px;
+                    color: $twilight-blue;
+    
+                    span {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        padding: 4px;
+                        text-align: center;
+                        border-radius: 50%;
+                        font-size: 13px;
+                        color: $gold;
+                        background-color: $twilight-blue;
+                    }
+                }
+
+                .line {
+                    flex: 1;
+                    height: 2px;
+                    margin: 0 1rem;
+                    background-color: $twilight-blue;
+                }
+
+                .price {
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: $twilight-blue;
+                }
+            }
+
+            .ticket {
+                height: 154px;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                border-top: 4px solid $emerald;
+                
+            }
+
+            .tdc-form {
+
+                label {
+                    margin-bottom: .5rem;
+                    font-size: 12px;
+                    font-weight: 600;
+                    opacity: 0.8;
+                    color: $light-grey;
+                    text-transform: uppercase;
+                }
+
+                .form-control {
+                    height: 54px;
+                    border: solid 1px $light-grey;
+                }
+            }
+
+            .student {
+
+                .custom-file {
+                    height: 170px;
+    
+                    .custom-file-label {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 400px;
+                        height: 170px;
+                        margin: auto;
+                        padding: 20px !important;
+                        text-align: center;
+                        border: 2px dashed $marine-blue;
+                        font-size: 18px;
+                        color: #43434a;      
+        
+                        &::after {
+                            display: none;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+
+                .save-file {
+                    display: block;
+                    width: 100%;
+                    max-width: 400px;
+                    margin: auto;
+                }
+            }
+
+
+            
+        }
+
+        .form-group {
+
+            label {
+                color: $grey;
+                font-size: 15px;
+            }
+    
+            input {
+                color: $grey;
+                font-size: 15px;
+                // border-bottom: 1px solid rgba($color: $grey, $alpha: 0.4);
+    
+                &.active {
+                    // color: $white;
+                    border-color: $grey;   
                 }
             }
         }
