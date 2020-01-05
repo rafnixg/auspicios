@@ -29,82 +29,26 @@ inputs.forEach(input => {
     if (input.getAttribute('required')) {
         label.innerHTML = label.innerHTML + ' <span class="fc-red">*</span>'
     }
-
-    input.addEventListener('focus', (event) => {
-        input.classList.add('active')
-        label.classList.add('active')
-    })
-
-    input.addEventListener('blur', (event) => {
-        input.classList.remove('active')
-
-        if (!input.value) {
-            label.classList.remove('active')
-        }
-    })
 })
 
-// VIDEO
-const video = document.getElementById('video')
-const playButton = document.getElementById('play')
+const subscribeInput = document.getElementById('subscribeEmail')
+const subscribeLabel = subscribeInput.parentNode.children[0]
 
-if (video && playButton) {
-    playButton.addEventListener('click', (event) => {
-        if (video.paused) {
-            video.play()
-            playButton.classList.add('fade-out')
-        } else {
-            video.pause()
-        }
-        
-    })
-
-    playButton.addEventListener('mouseover', (event) => {
-        playButton.classList.remove('fade-out')
-        playButton.classList.add('fade-in')
-    })
+subscribeInput.addEventListener('focus', (event) => {
     
-    video.addEventListener('mouseover', (event) => {
-        if (!video.paused) {
-            playButton.classList.remove('fade-out')
-            playButton.classList.add('fade-in')
-        }
-    })
-    
-    video.addEventListener('mouseout', (event) => {
-        if (!video.paused) {
-            playButton.classList.remove('fade-in')
-            playButton.classList.add('fade-out')
-        }
-    })
-}
+    subscribeInput.classList.add('active')
+    subscribeLabel.classList.add('active')
+})
 
+subscribeInput.addEventListener('blur', (event) => {
 
-// REGISTER TABS
-const nextButton = document.getElementById('next')
+    subscribeInput.classList.remove('active')
 
-if (nextButton) {
-    nextButton.addEventListener('click', (event) => {
-        // jQuery for Boostrap Tabs
-        console.log($('a[aria-selected=true]'));
-        $('a[aria-selected=true]').parent('li').next().children('a').tab('show')
-    })
-}
+    if (!subscribeInput.value) {
+        subscribeLabel.classList.remove('active')
+    }
+})
 
-// REGISTER FORM 
-const addAssistantButton = document.getElementById('addAssistant')
-
-if (addAssistantButton) {
-    addAssistantButton.addEventListener('click', (event) => {
-        const forms = document.getElementsByName('assistantForm')
-        const form = document.createElement('form')
-        form.setAttribute('name', 'assistantForm')
-        form.innerHTML = forms[0].innerHTML
-
-        const formsContainer = document.getElementById('forms')
-        formsContainer.appendChild(form)
-    })
-}
 
 // MAP
 function initMap() {

@@ -25,6 +25,31 @@
         }
     }
 
+    .types {
+        display: flex;
+        justify-content: center;
+
+        li {
+            flex: 1;
+            max-width: 150px;
+            padding: 1rem;
+            margin: 0 1rem;
+            border-radius: 15px;
+            cursor: pointer;
+
+            &.active {
+                background-color: $marine-blue;
+                
+                p { color: $white !important; }
+                img { filter: invert(1); }
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
     .countdown {
         margin-top: -100px;
 

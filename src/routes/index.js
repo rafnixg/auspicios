@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
 
-const sponsors = require('../js/sponsors')
-const expositors = require('../js/expositors')
-const schedule = require('../js/schedule')
-const { registerType, tickets, price } = require('../js/register')
+const sponsors = require('../js/sponsorsData')
+const expositors = require('../js/expositorsData')
+const schedule = require('../js/scheduleData')
+const { registerType, tickets, price } = require('../js/registerData')
 
 // Home Page
 router.get('/', (req, res) => res.render(

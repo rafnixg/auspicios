@@ -1,0 +1,49 @@
+.modal {
+    
+    .modal-dialog {
+        
+        .modal-content {
+            padding: 1rem;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 2px 32px 18px rgba(0, 0, 0, 0.2);
+
+            .modal-header {
+                padding: 0 1rem;
+                border: none;
+            }
+
+            .modal-body {
+                text-align: center;
+
+                p {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $black;
+                }
+
+                .counter {
+                    width: 40px;
+                    height: 40px;
+                    padding: 0;
+                    border-radius: 0;
+                    border: 1px solid $light-grey;
+                }
+
+                input {
+                    width: 55px;
+                    text-align: center;
+                    border: none;
+                    font-size: 22px;
+                    color: $black;
+                    appearance: none;
+                }
+            }
+
+            .modal-footer {
+                justify-content: center;
+                border: none;
+            }
+        }
+    }
+}
