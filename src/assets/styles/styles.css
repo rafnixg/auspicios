@@ -541,7 +541,7 @@ img {
     padding-left: 6rem;
     padding-right: 6rem; }
   .title-with-stroke *:first-child {
-    -webkit-text-stroke: 1.5px #ffffff; }
+    -webkit-text-stroke: 3px #ffffff; }
   .gold-title {
     font-size: 23px; }
   .twilight-blue-title {
@@ -653,7 +653,7 @@ img {
         display: none; }
       .header .nav .navigation-bar li.brands .alliance {
         position: absolute;
-        top: -10px;
+        top: -16px;
         left: calc(66.666% - 35px);
         font-size: 10px;
         font-weight: 500;
@@ -859,6 +859,8 @@ footer {
       margin-bottom: 1rem; }
     .home .schedule .days .day .name, .home .schedule .days .day .time, .home .schedule .days .day .description {
       padding: 1rem; }
+    .home .schedule .days .day .name p {
+      line-height: 35px; }
     .home .schedule .days .day .time.green {
       background-color: #4ae373; }
     .home .schedule .days .day .time.turquoise {

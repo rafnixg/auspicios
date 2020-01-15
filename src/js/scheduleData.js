@@ -23,7 +23,7 @@ const schedule = [
         ]
     },
     {
-        day: 'Día 1',
+        day: 'Foro día 1',
         date: '29/09',
         class: 'turquoise',
         sessions: [
@@ -46,7 +46,7 @@ const schedule = [
         ]
     },
     {
-        day: 'Día 2',
+        day: 'Foro día 2',
         date: '30/09',
         class: 'fuchsia',
         sessions: [

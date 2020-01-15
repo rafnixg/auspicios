@@ -186,6 +186,10 @@
                 .name, .time, .description {
                     padding: 1rem;
                 }
+
+                .name p {
+                    line-height: 35px;
+                }
     
                 .time {
                     &.green { background-color: $green; }
