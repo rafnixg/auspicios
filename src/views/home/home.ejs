@@ -1,31 +1,115 @@
 <section class="home">
     <section class="main background">
-        <p class="ff-axia fs-27">
-            6º Foro Latinoamericano en
-        </p>
-        <div class="main-text">
-            <p class="ff-axia-bold fs-39">
-                Calidad y Seguridad <br>
-                en la Salud
-            </p>
-            <p class="ff-axia-bold fs-50">
-                <span>28</span>
-                <span class="mx-4">29</span>
-                <span>30</span>
-            </p>
-            <p class="ff-axia fs-40">
-                Septiembre <span class="ff-axia=bold">2020</span>
-            </p>
-            <p class="ff-axia fs-35">Westin Lima Hotel</p>
+       
+        <div class="main-text d-flex justify-content-center align-items-center">
+            <div class="mr-5">
+                <p class="ff-axia fs-27">
+                    6º Foro Latinoamericano en
+                </p>
+                <p class="ff-axia-bold fs-39">
+                    Calidad y Seguridad <br>
+                    en la Salud
+                </p>
+            </div>
+            <div>
+                <p class="ff-axia-bold fs-35">
+                    <span class="mr-2">Preforo 28</span>
+                    <span>Foro 29 y 30</span>
+                </p>
+                <p class="ff-axia fs-35">
+                    Septiembre <span class="ff-axia=bold">2020</span>
+                </p>
+                <p class="ff-axia fs-30">Westin Lima Hotel</p>
+            </div>
         </div>
         <div class="my-4">
-            <a href="#" class="btn light">
+            <a href="#" data-toggle="modal" data-target="#typeModal" class="btn light">
                 Inscripción
                 <i class="flaticon-arrow-point-to-right"></i>
             </a>
         </div>
     </section>
-    <section class="countdown">
+    <div class="modal fade" id="ticketsModal" tabindex="-1" role="dialog" aria-labelledby="ticketsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="ff-axia fw-normal fs-30" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form name="tickets" action="">
+                        <p>Número de entradas</p>
+                        <div class="d-flex justify-content-center align-items-center my-4">
+                            <button id="removeTicket" type="button" class="btn counter">-</button>
+                            <input type="number" id="tickets" class="form-control" value="1" min="1">
+                            <button id="addTicket" type="button" class="btn counter">+</button>
+                        </div>
+                        <p>Días a asistir </p>
+                        <div class="my-4">
+                            <div class="custom-control custom-radio custom-control-inline px-3">
+                                <input type="radio" id="twentyEight" name="date" class="custom-control-input">
+                                <label class="custom-control-label" for="twentyEight">28</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline px-3">
+                                <input type="radio" id="twentyNine" name="date" class="custom-control-input">
+                                <label class="custom-control-label" for="twentyNine">29</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline px-3">
+                                <input type="radio" id="thirty" name="date" class="custom-control-input">
+                                <label class="custom-control-label" for="thirty">30</label>
+                            </div>
+                        </div>
+                        <p>Agregar entradas</p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dark mr-4" data-dismiss="modal">Cancelar</button>
+                    <a class="btn dark" href="/register">
+                        Siguiente
+                        <i class="flaticon-arrow-point-to-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="typeModal" tabindex="-1" role="dialog" aria-labelledby="typeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="ff-axia fw-normal fs-30" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="types" class="types">
+                        <li data-value="common">
+                            <p>General</p>
+                            <img src="img/icon/man.svg" alt="General" width="80px" height="100px">
+                        </li>
+                        <li data-value="student">
+                            <p>Estudiante</p>
+                            <img src="img/icon/cap.svg" alt="Estudiante" width="100px">
+                        </li>
+                        <li data-value="nurse">
+                            <p>Enfermera</p>
+                            <img src="img/icon/nurse.svg" alt="Enfermera" width="100px">
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dark mr-4" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn dark" data-dismiss="modal" data-toggle="modal" data-target="#ticketsModal">
+                        Siguiente
+                        <i class="flaticon-arrow-point-to-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<section class="countdown">
         <ul class="timer">
             <li>
                 <p>Days</p>
@@ -40,15 +124,15 @@
                 <p>1150</p>
             </li>
         </ul>
-    </section>
+    </section>-->
     <section class="about container">
         <div class="row">
             <div class="col-12 col-md-6 m-auto">
                 <h2 class="gold-title mb-0">Sobre la conferencia</h2>
                 <h3 class="twilight-blue-subtitle mt-4 mb-5">
-                    Bienvenido al  
-                    6º Foro Latinoamericano 
-                    en Calidad y Seguridad 
+                    Bienvenido al
+                    6º Foro Latinoamericano
+                    en Calidad y Seguridad
                     en la Salud
                 </h3>
                 <p class="fs-15 fc-grey">
@@ -98,19 +182,19 @@
         <div class="days my-4">
             <% schedule.forEach((day, i) => { %>
             <div class="day">
-                <div class="name" data-toggle="collapse" data-target="#<%= day.day %>" aria-expanded="true" aria-controls="<%= day.day %>">
+                <div class="name" data-toggle="collapse" data-target="#<%= day.class %>" aria-expanded="false" aria-controls="<%= day.class %>">
                     <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
                     <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
                 </div>
-                <div class="collapse <%= i === 0 ? 'show' : '' %>" id="<%= day.day %>"> 
+                <div class="collapse <%= i === 0 ? 'show' : '' %>" id="<%= day.class %>">
                     <% day.sessions.forEach(session => { %>
-                        <div class="time <%= day.class %>">
-                            <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
-                            <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
-                        </div>
-                        <div class="description">
-                            <p class="fs-15 fc-medium"><%= session.description %></p>
-                        </div>
+                    <div class="time <%= day.class %>">
+                        <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
+                        <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
+                    </div>
+                    <div class="description">
+                        <p class="fs-15 fc-medium"><%= session.description %></p>
+                    </div>
                     <% }) %>
                 </div>
             </div>
@@ -131,50 +215,47 @@
             <div id="carouselExpositors" class="carousel slide" data-ride="carousel" pause="hover">
                 <div class="carousel-inner">
                     <% expositors.forEach((item, i) => { %>
-                        <% item.forEach((expositor, j) => { %>
-                            <div class="carousel-item <%= i === 0 && j === 0 ? 'active' : '' %>"">
-                                <div class="slider">
-                                    <div class="pl-5 ml-5">
-                                        <p class="fs-34 fw-bold fc-white mt-2"><%= expositor.firstName %></p>
-                                        <p class="fs-34 fw-bold fc-white mb-2"><%= expositor.lastName %></p>
-                                        <p class="gold-title mb-0"><%= expositor.position %></p>
-                                        <p class="fs-12 fw-medium fc-white my-4">
-                                            Business cards represent not only your business, but it also tells people your professionalism in the
-                                            industry. In the business world today, the usage of business cards is far beyond just informing people
-                                        </p>
-                                        <a href="/expositors" class="btn light mt-3 mx-auto">
-                                            Ver todos los expositores
-                                            <i class="flaticon-arrow-point-to-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="text-center">
-                                        <img 
-                                            class="pl-4 my-4" 
-                                            src="img/backgrounds/expositors-home.jpg"
-                                            alt="<%= expositor.firstName %> <%= expositor.lastName %>" 
-                                            width="100%" 
-                                            height="300px">
-                                    </div>
-                                </div>
-                            </div>
-                        <% }) %>
-                    <% }) %>
+                    <% item.forEach((expositor, j) => { %>
+                    <div class="carousel-item <%= i === 0 && j === 0 ? 'active' : '' %>"">
+                                <div class=" slider">
+                        <div class="pl-5 ml-5">
+                            <p class="fs-34 fw-bold fc-white mt-2"><%= expositor.firstName %></p>
+                            <p class="fs-34 fw-bold fc-white mb-2"><%= expositor.lastName %></p>
+                            <p class="gold-title mb-0"><%= expositor.position %></p>
+                            <p class="fs-12 fw-medium fc-white my-4">
+                                Business cards represent not only your business, but it also tells people your
+                                professionalism in the
+                                industry. In the business world today, the usage of business cards is far beyond just
+                                informing people
+                            </p>
+                            <a href="/expositors" class="btn light mt-3 mx-auto">
+                                Ver todos los expositores
+                                <i class="flaticon-arrow-point-to-right"></i>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <img class="pl-4 my-4" src="img/backgrounds/expositors-home.jpg"
+                                alt="<%= expositor.firstName %> <%= expositor.lastName %>" width="100%" height="300px">
+                        </div>
+                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExpositors" role="button" data-slide="prev">
-                    <i class="flaticon-arrow-point-to-right rotate"></i>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExpositors" role="button" data-slide="next">
-                    <i class="flaticon-arrow-point-to-right"></i>
-                    <span class="sr-only">Next</span>
-                  </a>
+                <% }) %>
+                <% }) %>
             </div>
+            <a class="carousel-control-prev" href="#carouselExpositors" role="button" data-slide="prev">
+                <i class="flaticon-arrow-point-to-right rotate"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExpositors" role="button" data-slide="next">
+                <i class="flaticon-arrow-point-to-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
         </div>
     </section>
     <section class="know-us background trama">
         <div class="title-with-stroke text-center">
-            <p>No te pierdas Lima,</p>
-            <p>conoce más</p>
+            <p>No te pierdas Lima</p>
         </div>
         <a href="/stay" class="btn light mx-auto mt-4 mb-5 mb-md-0">
             Ver más
@@ -185,7 +266,7 @@
         <h2 class="twilight-blue-title pb-4 mb-0">Auspiciadores</h2>
         <% sponsors.forEach((item, i) => { %>
         <div class="text-center">
-            <p class="fs-30 fw-semi-bold fc-twilight-blue my-5"><%= sponsorTypes[i] %></p>
+            <p class="fs-30 fw-semi-bold fc-twilight-blue my-5 text-uppercase"><%= sponsorTypes[i] %></p>
             <div class="item">
                 <% item.forEach(sponsor => { %>
                 <img class="sponsor" src="<%= sponsor.src %>" alt="<%= sponsor.name %>">
@@ -196,3 +277,4 @@
         <% }) %>
     </section>
 </section>
+<script src="js/home.js"></script>

@@ -1,21 +1,30 @@
-const registerType = 'student'
-const price = '$ 120,00'
-const tickets = [
-    {   
-        dates: ['29'],
-        title: '6th Latin American Forum on Quality and Safety in Healthcare',
-        service: 'Almuerzo | cóctel | Workshop 1',
-        name: 'Antonio Olson'
-    },
-    {   
-        dates: ['27', '28', '29'],
-        title: '6th Latin American Forum on Quality and Safety in Healthcare',
-        service: 'Almuerzo | cóctel | Workshop 1',
-        name: 'Antonio Olson'
-    }
-]
+// REGISTER TABS
+const nextButton = document.getElementById('next')
 
+if (nextButton) {
+    nextButton.addEventListener('click', (event) => {
+        // jQuery for Boostrap Tabs
+        $('a[aria-selected=true]').parent('li').next().children('a').tab('show')
+        const tab = $('a[aria-selected=true]').attr('href')
+        
+        if (tab === '#confirm') {
+            const actionButtons = document.getElementById('action-buttons')
+            actionButtons.classList.add('d-none')
+        }
+    })
+}
 
-module.exports.registerType = registerType
-module.exports.tickets = tickets
-module.exports.price = price
+// REGISTER FORM 
+const addAssistantButton = document.getElementById('addAssistant')
+
+if (addAssistantButton) {
+    addAssistantButton.addEventListener('click', (event) => {
+        const forms = document.getElementsByName('assistantForm')
+        const form = document.createElement('form')
+        form.setAttribute('name', 'assistantForm')
+        form.innerHTML = forms[0].innerHTML
+
+        const formsContainer = document.getElementById('forms')
+        formsContainer.appendChild(form)
+    })
+}

@@ -164,6 +164,10 @@ a {
     }
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .social-networks {
     i {
         color: $white;
@@ -219,7 +223,7 @@ img {
 
     .title-with-stroke {
         *:first-child {
-            -webkit-text-stroke: 1.5px $white;
+            -webkit-text-stroke: 3px $white;
         }
     }
 

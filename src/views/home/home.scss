@@ -18,10 +18,37 @@
             margin: 0.5rem 0;
             border-top: 1px solid $white;
             border-bottom: 1px solid $white;
+            margin-bottom:20px;
+            width: 70%;
         }
 
         p {
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .types {
+        display: flex;
+        justify-content: center;
+
+        li {
+            flex: 1;
+            max-width: 150px;
+            padding: 1rem;
+            margin: 0 1rem;
+            border-radius: 15px;
+            cursor: pointer;
+
+            &.active {
+                background-color: $marine-blue;
+                
+                p { color: $white !important; }
+                img { filter: invert(1); }
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
         }
     }
 
@@ -160,6 +187,10 @@
 
                 .name, .time, .description {
                     padding: 1rem;
+                }
+
+                .name p {
+                    line-height: 35px;
                 }
     
                 .time {
