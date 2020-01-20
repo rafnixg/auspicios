@@ -13,45 +13,44 @@
     </div>
     <form name="data" action="">
         <div class="form-group row mb-4">
-            <label for="greeting" class="col-12 col-md-3">Saludo</label>
-            <input type="text" id="greeting" class="form-control col-12 col-md-9" required="true">
-        </div>
-        <div class="form-group row mb-4">
-            <label for="name" class="col-12 col-md-3">Nombres</label>
-            <input type="text" id="name" class="form-control col-12 col-md-9" required="true">
-        </div>
-        <div class="form-group row mb-4">
-            <label for="lastName" class="col-12 col-md-3">Apellidos</label>
-            <input type="text" id="lastName" class="form-control col-12 col-md-9" required="true">
-        </div>
-        <div class="form-group row mb-4">
-            <label for="organization" class="col-12 col-md-3">Organización</label>
-            <input type="text" id="organization" class="form-control col-12 col-md-9" required="true">
-        </div>
-        <div class="form-group row mb-4">
-            <label for="position" class="col-12 col-md-3">Cargo</label>
-            <input type="text" id="position" class="form-control col-12 col-md-9" required="true">
-        </div>
-        <div class="form-group row mb-4">
-            <label for="address" class="col-12 col-md-3">Dirección</label>
-            <input type="text" id="address" class="form-control col-12 col-md-9" required="true">
-        </div>
-        <div class="form-group row mb-4">
-            <label for="phone" class="col-12 col-md-3">Teléfono</label>
-            <input type="text" id="phone" class="form-control col-12 col-md-9" required="true">
-        </div>
-        <div class="form-group row mb-4">
-            <label for="email" class="col-12 col-md-3">E-mail</label>
-            <input type="text" id="email" class="form-control col-12 col-md-9" required="true">
-            <div class="col-12 col-md-9 offset-md-3 mt-2 <%= (registerType !== 'student' ? 'd-none' : '') %>">
-                <span class="grey-text">Registrarse con el correo que le otorga la universidad</span>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="greeting">Saludo</label>
+                <input type="text" id="greeting" class="form-control" required="true">
             </div>
-        </div>
-        <div class="form-group row mb-4 <%= (registerType !== 'delegate' ? 'd-none' : '') %>">
-            <label for="promocode" class="col-12 col-md-3">Promocode</label>
-            <input type="text" id="promocode" class="form-control col-12 col-md-9" required="true">
-            <div class="col-12 col-md-9 offset-md-3 mt-2 <%= (registerType !== 'student' ? 'd-none' : '') %>">
-                <span class="grey-text">Registrarse con el correo que le otorga la universidad</span>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="name">Nombres</label>
+                <input type="text" id="name" class="form-control" required="true">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="lastName">Apellidos</label>
+                <input type="text" id="lastName" class="form-control" required="true">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="organization">Organización</label>
+                <input type="text" id="organization" class="form-control" required="true">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="position">Cargo</label>
+                <input type="text" id="position" class="form-control" required="true">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="address">Dirección</label>
+                <input type="text" id="address" class="form-control" required="true">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="phone">Teléfono</label>
+                <input type="text" id="phone" class="form-control" required="true">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" class="form-control" required="true">
+                <div class="mt-2 <%= (registerType !== 'student' ? 'd-none' : '') %>">
+                    <span class="grey-text">Registrarse con el correo que le otorga la universidad</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 <%= (registerType !== 'delegate' ? 'd-none' : '') %>">
+                <label for="promocode">Promocode</label>
+                <input type="text" id="promocode" class="form-control" required="true">
             </div>
         </div>
         <div class="form-group row student <%= (registerType !== 'student' ? 'd-none' : '') %>">

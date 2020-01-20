@@ -633,7 +633,7 @@ img {
             font-weight: 500;
             color: #0d3666; }
             .header .nav .navigation-bar li.brands .top-text.organize {
-              left: calc(15% - 35px); }
+              left: calc(15% - 10px); }
             .header .nav .navigation-bar li.brands .top-text.alliance {
               left: calc(66.666% - 35px); }
         .header .nav .navigation-bar li a {

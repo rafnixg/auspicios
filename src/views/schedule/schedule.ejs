@@ -21,6 +21,7 @@
                         <% day.sessions.forEach(session => { %>
                             <div class="time <%= day.class %>">
                                 <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
+                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
                                 <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
                             </div>
                             <div class="description">

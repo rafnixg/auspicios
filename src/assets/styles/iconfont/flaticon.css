@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 04/01/2020 19:11
+  	Creation date: 20/01/2020 13:40
   	*/
 
 @font-face {
@@ -48,3 +48,4 @@ margin-left: 20px;
 .flaticon-material-icon-cloud:before { content: "\f10f"; }
 .flaticon-credit-card:before { content: "\f110"; }
 .flaticon-business-and-finance-1:before { content: "\f111"; }
+.flaticon-linkedin:before { content: "\f112"; }
