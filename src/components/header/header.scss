@@ -80,14 +80,22 @@
                         }
                     }
 
-                    .alliance {
+                    .top-text {
                         position: absolute;
                         top: -20px;
-                        left: calc(66.666% - 35px);
                         font-size: 10px;
                         font-weight: 500;
                         color: $twilight-blue;
+
+                        &.organize {
+                            left: calc(15% - 35px);
+                        }
+
+                        &.alliance {
+                            left: calc(66.666% - 35px);
+                        }
                     }
+
                 }
 
                 a {
@@ -130,16 +138,26 @@
                     }
 
                     &.brands {
-                        .alliance {
-                            position: absolute;
-                            top: -16px;
-                            left: calc(66.666% - 35px);
-                            font-size: 10px;
-                            font-weight: 500;
-                            color: $twilight-blue;
+
+                        .top-text {
+                            &.alliance {
+                                top: -16px;
+                            }
                         }
+                        
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .header {
+        .nav {
+            .navigation-bar {
+                max-width: 1400px;
+                margin: 2rem auto;
             }
         }
     }

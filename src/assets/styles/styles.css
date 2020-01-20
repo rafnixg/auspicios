@@ -398,6 +398,11 @@ input, .form-control {
     min-height: 85vh;
     padding-top: 154px; }
 
+.main-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; }
+
 .trama {
   position: relative; }
   .trama > * {
@@ -418,18 +423,6 @@ input, .form-control {
   .trama.right::after {
     background-position: bottom right;
     background-image: url("../img/backgrounds/trama2.png"); }
-
-.title-with-stroke {
-  margin-bottom: 0;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 900; }
-  .title-with-stroke span {
-    display: block;
-    margin-bottom: 1.25rem; }
-  .title-with-stroke *:first-child {
-    color: transparent;
-    -webkit-text-stroke: 1px #ffffff; }
 
 .title-with-stroke {
   margin-bottom: 0;
@@ -633,13 +626,16 @@ img {
             padding: 0 0.5rem; }
             .header .nav .navigation-bar li.brands > div:first-child {
               border-right: 1px solid #d4d4d4; }
-          .header .nav .navigation-bar li.brands .alliance {
+          .header .nav .navigation-bar li.brands .top-text {
             position: absolute;
             top: -20px;
-            left: calc(66.666% - 35px);
             font-size: 10px;
             font-weight: 500;
             color: #0d3666; }
+            .header .nav .navigation-bar li.brands .top-text.organize {
+              left: calc(15% - 35px); }
+            .header .nav .navigation-bar li.brands .top-text.alliance {
+              left: calc(66.666% - 35px); }
         .header .nav .navigation-bar li a {
           color: #0d3666;
           font-weight: 500;
@@ -664,17 +660,13 @@ img {
       border-radius: 15px; }
       .header .nav .navigation-bar li:first-child {
         display: none; }
-      .header .nav .navigation-bar li.brands .alliance {
-        position: absolute;
-        top: -16px;
-        left: calc(66.666% - 35px);
-        font-size: 10px;
-        font-weight: 500;
-        color: #0d3666; } }
+      .header .nav .navigation-bar li.brands .top-text.alliance {
+        top: -16px; } }
 
-@media (min-width: 769px) {
-  .header .nav {
-    min-height: auto; } }
+@media (min-width: 1500px) {
+  .header .nav .navigation-bar {
+    max-width: 1400px;
+    margin: 2rem auto; } }
 
 footer {
   position: relative;
@@ -766,7 +758,8 @@ footer {
     margin: 0.5rem 0;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: 70%; }
   .home .main p {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
 
