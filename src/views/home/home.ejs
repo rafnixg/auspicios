@@ -1,6 +1,6 @@
 <section class="home">
     <section class="main background">
-       
+
         <div class="main-text d-flex justify-content-center align-items-center">
             <div class="mr-5">
                 <p class="ff-axia fs-27">
@@ -101,7 +101,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn dark mr-4" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn dark" data-dismiss="modal" data-toggle="modal" data-target="#ticketsModal">
+                    <button type="button" class="btn dark" data-dismiss="modal" data-toggle="modal"
+                        data-target="#ticketsModal">
                         Siguiente
                         <i class="flaticon-arrow-point-to-right"></i>
                     </button>
@@ -163,7 +164,8 @@
         <div class="days my-4">
             <% schedule.forEach((day, i) => { %>
             <div class="day">
-                <div class="name" data-toggle="collapse" data-target="#<%= day.class %>" aria-expanded="false" aria-controls="<%= day.class %>">
+                <div class="name" data-toggle="collapse" data-target="#<%= day.class %>" aria-expanded="false"
+                    aria-controls="<%= day.class %>">
                     <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
                     <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
                 </div>
@@ -195,34 +197,34 @@
         <div class="trama mb-5">
             <div id="carouselExpositors" class="carousel slide" data-ride="carousel" pause="hover">
                 <div class="carousel-inner">
-                    <% expositors.forEach((item, i) => { %>
-                    <% item.forEach((expositor, j) => { %>
-                    <div class="carousel-item <%= i === 0 && j === 0 ? 'active' : '' %>"">
+                    <% expositors[0].data.forEach((arr, i) => { %>
+                        <% arr.forEach((expositor, j) => { %>
+                            <div class="carousel-item <%= i === 0 && j === 0 ? 'active' : '' %>"">
                                 <div class=" slider">
-                        <div class="pl-5 ml-5">
-                            <p class="fs-34 fw-bold fc-white mt-2"><%= expositor.firstName %></p>
-                            <p class="fs-34 fw-bold fc-white mb-2"><%= expositor.lastName %></p>
-                            <p class="gold-title mb-0"><%= expositor.position %></p>
-                            <p class="fs-12 fw-medium fc-white my-4">
-                                Business cards represent not only your business, but it also tells people your
-                                professionalism in the
-                                industry. In the business world today, the usage of business cards is far beyond just
-                                informing people
-                            </p>
-                            <a href="/expositors" class="btn light mt-3 mx-auto">
-                                Ver todos los expositores
-                                <i class="flaticon-arrow-point-to-right"></i>
-                            </a>
-                        </div>
-                        <div class="text-center">
-                            <img class="pl-4 my-4" src="img/backgrounds/expositors-home.jpg"
-                                alt="<%= expositor.firstName %> <%= expositor.lastName %>" width="100%" height="300px">
-                        </div>
-                    </div>
+                                    <div class="pl-5 ml-5">
+                                        <p class="fs-34 fw-bold fc-white mt-2"><%= expositor.firstName %></p>
+                                        <p class="fs-34 fw-bold fc-white mb-2"><%= expositor.lastName %></p>
+                                        <p class="gold-title mb-0"><%= expositor.position %></p>
+                                        <p class="fs-12 fw-medium fc-white my-4">
+                                            Business cards represent not only your business, but it also tells people your
+                                            professionalism in the
+                                            industry. In the business world today, the usage of business cards is far beyond just
+                                            informing people
+                                        </p>
+                                        <a href="/expositors" class="btn light mt-3 mx-auto">
+                                            Ver todos los expositores
+                                            <i class="flaticon-arrow-point-to-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="text-center">
+                                        <img class="pl-4 my-4" src="img/backgrounds/expositors-home.jpg"
+                                            alt="<%= expositor.firstName %> <%= expositor.lastName %>" width="100%" height="300px">
+                                    </div>
+                                </div>
+                            </div>
+                        <% }) %>
+                    <% }) %>
                 </div>
-                <% }) %>
-                <% }) %>
-            </div>
             <a class="carousel-control-prev" href="#carouselExpositors" role="button" data-slide="prev">
                 <i class="flaticon-arrow-point-to-right rotate"></i>
                 <span class="sr-only">Previous</span>

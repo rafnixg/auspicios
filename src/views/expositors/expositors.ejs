@@ -5,48 +5,66 @@
             <span>Expositores</span>
         </h1>
     </section>
-    <section class="guests">
-        <div class="container trama">
+    <section class="guests trama">
+        <div class="container">
             <!--<h2 class="gold-title mb-0">Invitados</h2>-->
             <h3 class="twilight-blue-subtitle">
                 Nuestros expositores <br>
                 esperan por ti.
             </h3>
-            <div class="buttons">
-                <button class="btn light">
-                    Keynote Speaker
-                    <i class="flaticon-arrow-point-to-right"></i>
-                </button>
-                <button class="btn light">
-                    Speaker
-                    <i class="flaticon-arrow-point-to-right"></i>
-                </button>
-                <button class="btn light">
-                    Panelista
-                    <i class="flaticon-arrow-point-to-right"></i>
-                </button>
-                <button class="btn light">
-                    Moderador
-                    <i class="flaticon-arrow-point-to-right"></i>
-                </button>
+            <div>
+                <ul class="buttons nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="btn light" id="keynote-tab" data-toggle="tab" href="#keynote" role="tab"
+                            aria-controls="keynote" aria-selected="true">
+                            Keynote Speaker
+                            <i class="flaticon-arrow-point-to-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn light" id="speaker-tab" data-toggle="tab" href="#speaker" role="tab"
+                            aria-controls="speaker" aria-selected="false">
+                            Speaker
+                            <i class="flaticon-arrow-point-to-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn light" id="panelista-tab" data-toggle="tab" href="#panelista" role="tab"
+                            aria-controls="panelista" aria-selected="false">
+                            Panelista
+                            <i class="flaticon-arrow-point-to-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn light" id="moderador-tab" data-toggle="tab" href="#moderador" role="tab"
+                            aria-controls="moderador" aria-selected="false">
+                            Moderador
+                            <i class="flaticon-arrow-point-to-right"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="lists">
+            <div class="lists tab-content" id="myTabContent">
                 <% expositors.forEach((item, i) => { %>
-                    <div class="expositors-list">
-                        <% item.forEach((expositor, i) => { %>
-                            <div class="expositor" style="background-image: url('<%= expositor.img %>');">
-                                <div>
-                                    <p class="name"><%= expositor.firstName %></p>
-                                    <p class="name"><%= expositor.lastName %></p>
-                                    <p class="position"><%= expositor.position %></p>
-                                </div>
-                                <div class="social-networks mt-auto">
-                                    
-                                    <a href="<%= expositor.twitter %>">
-                                        <i class="flaticon-twitter mr-3"></i>
-                                    </a>
-                                    
-                                </div>
+                    <div class="tab-pane fade <%=  i === 0 ? 'show active' : '' %>" id="<%= item.tab %>" role="tabpanel" aria-labelledby="<%= item.tab %>-tab">
+                        <% item.data.forEach((arr, i) => { %>
+                            <div class="expositors-list">
+                                <% arr.forEach((expositor, i) => { %>
+                                    <div class="expositor" style="background-image: url('<%= expositor.img %>');">
+                                        <div>
+                                            <p class="name"><%= expositor.firstName %></p>
+                                            <p class="name"><%= expositor.lastName %></p>
+                                            <p class="position"><%= expositor.position %></p>
+                                        </div>
+                                        <div class="social-networks mt-auto">
+
+                                            <a href="<%= expositor.twitter %>">
+                                                <i class="flaticon-twitter mr-3"></i>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                <% }) %>
                             </div>
                         <% }) %>
                     </div>

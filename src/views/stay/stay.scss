@@ -73,9 +73,30 @@
                 }
 
                 .where-to-go {
+                    margin-bottom: 1.5rem;
                     font-family: AxiaBold;
                     font-size: 32px;
                     color: $gold;
+                }
+
+                .nav {
+                    border-bottom: none;
+
+                    li {
+                        padding: 0 1rem;
+                        
+
+                        a {
+                            font-family: AxiaBold;
+                            font-size: 20px;
+                            color: $twilight-blue;
+                        }
+
+                        &:not(:last-of-type) {
+                            border-right: 2px solid $gold;
+                        }
+                    }
+                    
                 }
 
                 .item {

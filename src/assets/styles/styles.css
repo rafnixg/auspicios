@@ -944,7 +944,8 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    border-bottom: none; }
     .expositors .guests .buttons .btn {
       margin-right: 2rem;
       margin-bottom: 1rem; }
@@ -1070,9 +1071,20 @@ footer {
         font-size: 60px;
         color: #191919; }
       .stay .accommodation .hotels .locations .where-to-go {
+        margin-bottom: 1.5rem;
         font-family: AxiaBold;
         font-size: 32px;
         color: #937c4c; }
+      .stay .accommodation .hotels .locations .nav {
+        border-bottom: none; }
+        .stay .accommodation .hotels .locations .nav li {
+          padding: 0 1rem; }
+          .stay .accommodation .hotels .locations .nav li a {
+            font-family: AxiaBold;
+            font-size: 20px;
+            color: #0d3666; }
+          .stay .accommodation .hotels .locations .nav li:not(:last-of-type) {
+            border-right: 2px solid #937c4c; }
       .stay .accommodation .hotels .locations .item .title {
         margin-bottom: 0.5rem;
         font-size: 18px;
