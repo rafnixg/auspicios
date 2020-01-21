@@ -704,6 +704,20 @@ footer {
     @media (min-width: 992px) {
       footer .meftah {
         bottom: -30px; } }
+  footer .modal .modal-dialog .modal-content .modal-body {
+    text-align: left; }
+    footer .modal .modal-dialog .modal-content .modal-body .form-group label {
+      color: #333;
+      font-size: 15px;
+      position: relative; }
+    footer .modal .modal-dialog .modal-content .modal-body .form-group input {
+      color: #333;
+      font-size: 15px;
+      border-bottom: 1px solid rgba(111, 111, 111, 0.4);
+      width: 100%;
+      text-align: left; }
+      footer .modal .modal-dialog .modal-content .modal-body .form-group input.active {
+        border-color: #6f6f6f; }
 
 .map {
   position: relative;
