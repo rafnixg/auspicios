@@ -7,19 +7,19 @@ const schedule = [
             {
             
                 name: 'Cecilia Roberts',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
                 name: 'Jeff Tate',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
                 name: 'Sean Daniels',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             }
@@ -33,19 +33,19 @@ const schedule = [
             {
             
                 name: 'William Hernandez',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
                 name: 'Jerome Martinez',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
                 name: 'Nina Terry',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             }
@@ -59,19 +59,19 @@ const schedule = [
             {
             
                 name: 'Marguerite Carlson',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
                 name: 'Eva Norton',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             },
             {
                 name: 'Ivan Jefferson',
-                hour: '10.00 - 11.00',
+                hour: '10.00am - 11.00am',
                 room: 'Sala 1',
                 description: 'Plenary Session: Laying the foundations for future success with the new consumer'
             }
