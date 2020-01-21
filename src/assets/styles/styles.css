@@ -906,7 +906,9 @@ footer {
   align-items: center;
   justify-content: space-evenly; }
   .home .sponsors .item .sponsor {
-    padding: 1rem 1.5rem; }
+    margin: 1rem 1.5rem;
+    max-width: 200px;
+    max-height: 70px; }
 
 .home .sponsors .divider {
   width: 90%;
