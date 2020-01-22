@@ -18,7 +18,7 @@ removeButton.addEventListener('click', (event) => {
 
 
 // VIDEO
-const video = document.getElementById('video')
+/*const video = document.getElementById('video')
 const playButton = document.getElementById('play')
 
 if (video && playButton) {
@@ -50,4 +50,4 @@ if (video && playButton) {
             playButton.classList.add('fade-out')
         }
     })
-}
+}*/
