@@ -207,10 +207,7 @@
                                         <p class="fs-34 fw-bold fc-white mb-2"><%= expositor.lastName %></p>
                                         <p class="gold-title mb-0"><%= expositor.position %></p>
                                         <p class="fs-12 fw-medium fc-white my-4">
-                                            Business cards represent not only your business, but it also tells people your
-                                            professionalism in the
-                                            industry. In the business world today, the usage of business cards is far beyond just
-                                            informing people
+                                            <%= expositor.description %>
                                         </p>
                                         <a href="/expositors" class="btn light mt-3 mx-auto">
                                             Ver todos los expositores
@@ -218,7 +215,7 @@
                                         </a>
                                     </div>
                                     <div class="text-center">
-                                        <img class="pl-4 my-4" src="img/backgrounds/expositors-home.jpg"
+                                        <img class="pl-4 my-4" src="<%= expositor.img_home %>"
                                             alt="<%= expositor.firstName %> <%= expositor.lastName %>" width="100%" height="300px">
                                     </div>
                                 </div>
@@ -249,6 +246,7 @@
     <section class="sponsors container">
         <h2 class="twilight-blue-title pb-4 mb-0">Auspiciadores</h2>
         <% sponsors.forEach((item, i) => { %>
+            <%if (item.length>0) {%>
         <div class="text-center">
             <p class="fs-30 fw-semi-bold fc-twilight-blue my-5 text-uppercase"><%= sponsorTypes[i] %></p>
             <div class="item">
@@ -258,7 +256,7 @@
             </div>
             <div class="divider my-4"></div>
         </div>
-        <% }) %>
+        <% }}) %>
     </section>
 </section>
 <script src="js/home.js"></script>

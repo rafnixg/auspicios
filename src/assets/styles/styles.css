@@ -704,6 +704,20 @@ footer {
     @media (min-width: 992px) {
       footer .meftah {
         bottom: -30px; } }
+  footer .modal .modal-dialog .modal-content .modal-body {
+    text-align: left; }
+    footer .modal .modal-dialog .modal-content .modal-body .form-group label {
+      color: #000;
+      font-size: 15px;
+      position: relative; }
+    footer .modal .modal-dialog .modal-content .modal-body .form-group input {
+      color: #000;
+      font-size: 15px;
+      border-bottom: 1px solid rgba(111, 111, 111, 0.4);
+      width: 100%;
+      text-align: left; }
+      footer .modal .modal-dialog .modal-content .modal-body .form-group input.active {
+        border-color: #6f6f6f; }
 
 .map {
   position: relative;
@@ -892,7 +906,9 @@ footer {
   align-items: center;
   justify-content: space-evenly; }
   .home .sponsors .item .sponsor {
-    padding: 1rem 1.5rem; }
+    margin: 1rem 1.5rem;
+    max-width: 200px;
+    max-height: 70px; }
 
 .home .sponsors .divider {
   width: 90%;
@@ -1266,6 +1282,108 @@ footer {
     font-size: 15px; }
     .register .payment .form-group input.active {
       border-color: #6f6f6f; }
+
+.papers .background {
+  background-image: url("../img/backgrounds/schedule.jpg"); }
+
+.papers .diary {
+  position: relative;
+  /*.twilight-blue-subtitle {
+            max-width: 430px;
+        } */ }
+  .papers .diary .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .papers .diary .days .day {
+      width: 290px;
+      background-color: #ffffff;
+      border: 0.3px solid #979797; }
+      .papers .diary .days .day > div {
+        padding: 1rem; }
+        .papers .diary .days .day > div.time.green {
+          background-color: #4ae373; }
+        .papers .diary .days .day > div.time.turquoise {
+          background-color: #47e6db; }
+        .papers .diary .days .day > div.time.fuchsia {
+          background-color: #ff61de; }
+
+.papers .custom-file {
+  height: 170px; }
+  .papers .custom-file .custom-file-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    height: 170px;
+    margin: auto;
+    padding: 20px !important;
+    text-align: center;
+    border: 2px dashed #003563;
+    font-size: 18px;
+    color: #43434a; }
+    .papers .custom-file .custom-file-label::after {
+      display: none; }
+    .papers .custom-file .custom-file-label:focus {
+      outline: none; }
+
+.papers .save-file {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: auto; }
+
+.contact .background {
+  background-image: url("../img/backgrounds/schedule.jpg"); }
+
+.contact .diary {
+  position: relative;
+  /*.twilight-blue-subtitle {
+            max-width: 430px;
+        } */ }
+  .contact .diary .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .contact .diary .days .day {
+      width: 290px;
+      background-color: #ffffff;
+      border: 0.3px solid #979797; }
+      .contact .diary .days .day > div {
+        padding: 1rem; }
+        .contact .diary .days .day > div.time.green {
+          background-color: #4ae373; }
+        .contact .diary .days .day > div.time.turquoise {
+          background-color: #47e6db; }
+        .contact .diary .days .day > div.time.fuchsia {
+          background-color: #ff61de; }
+
+.contact .custom-file {
+  height: 170px; }
+  .contact .custom-file .custom-file-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    height: 170px;
+    margin: auto;
+    padding: 20px !important;
+    text-align: center;
+    border: 2px dashed #003563;
+    font-size: 18px;
+    color: #43434a; }
+    .contact .custom-file .custom-file-label::after {
+      display: none; }
+    .contact .custom-file .custom-file-label:focus {
+      outline: none; }
+
+.contact .save-file {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: auto; }
 
 .modal .modal-dialog .modal-content {
   padding: 1rem;

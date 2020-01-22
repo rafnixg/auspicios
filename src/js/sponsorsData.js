@@ -2,41 +2,28 @@ const sponsorTypes = [
     'Elite', 'Lead', 'Premium', 'Gold', 'Silver', 'Media Partner Oficial', 'Media Partners'
 ]
 const sponsors = [
+    // Elite
+    [],
+    // Lead
     [
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'ebay', src: 'img/sponsors/ebay.png' },
-        { name: 'Forever 21', src: 'img/sponsors/forever21.png' },
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'SBIAE', src: 'img/sponsors/sbiae.png' }
+        { name: 'GE Healthcare', src: 'img/sponsors/GE.png' },
+        { name: 'Philips', src: 'img/sponsors/PHILIPS.png' },
+        { name: 'SynLab', src: 'img/sponsors/SYNLAB.png' },
     ],
+    // Premium
+    [],
+    // Gold
     [
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'ebay', src: 'img/sponsors/ebay.png' },
-        { name: 'Forever 21', src: 'img/sponsors/forever21.png' },
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'SBIAE', src: 'img/sponsors/sbiae.png' }
+        { name: 'Dedalus', src: 'img/sponsors/DEDALUS.png' },
+        { name: 'Sura', src: 'img/sponsors/SURA.png' },
+        { name: 'Ricoh', src: 'img/sponsors/RICOH.png' },
     ],
-    [
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'ebay', src: 'img/sponsors/ebay.png' },
-        { name: 'Forever 21', src: 'img/sponsors/forever21.png' },
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'SBIAE', src: 'img/sponsors/sbiae.png' }
-    ],
-    [
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'ebay', src: 'img/sponsors/ebay.png' },
-        { name: 'Forever 21', src: 'img/sponsors/forever21.png' },
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'SBIAE', src: 'img/sponsors/sbiae.png' }
-    ],
-    [
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'ebay', src: 'img/sponsors/ebay.png' },
-        { name: 'Forever 21', src: 'img/sponsors/forever21.png' },
-        { name: 'Samsung', src: 'img/sponsors/samsung.png' },
-        { name: 'SBIAE', src: 'img/sponsors/sbiae.png' }
-    ]
+    // Silver
+    [],
+    // Media partner oficial
+    [],
+    // Media Partner
+    []
 ]
 
 module.exports.sponsorTypes = sponsorTypes

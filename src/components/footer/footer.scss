@@ -54,5 +54,35 @@ footer {
         }
     }
     
+    .modal{
+        .modal-dialog{
+            .modal-content{
+                .modal-body{
+                    text-align: left;
+                    .form-group {
+
+                        label {
+                            color: #000;
+                            font-size: 15px;
+                            position: relative;
+                        }
+                
+                        input {
+                            color: #000;
+                            font-size: 15px;
+                            border-bottom: 1px solid rgba($color: $grey, $alpha: 0.4);
+                            width: 100%;
+                            text-align: left;
+                            &.active {
+                                // color: $white;
+                                border-color: $grey;   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
 

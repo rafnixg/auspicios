@@ -1,0 +1,70 @@
+.papers {
+    .background {
+        background-image: url('../img/backgrounds/schedule.jpg');
+    }
+
+    .diary {
+        position: relative;
+        
+        /*.twilight-blue-subtitle {
+            max-width: 430px;
+        } */
+
+        .days {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .day {
+                width: 290px;
+                background-color: $white;
+                border: 0.3px solid #979797;
+
+                > div {
+                    padding: 1rem;
+    
+                    &.time {
+    
+                        &.green { background-color: $green; }
+                        &.turquoise { background-color: $turquoise; }
+                        &.fuchsia { background-color: $fuchsia; }
+                    }
+                } 
+            }
+        }
+    }
+    .custom-file {
+        height: 170px;
+
+        .custom-file-label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            height: 170px;
+            margin: auto;
+            padding: 20px !important;
+            text-align: center;
+            border: 2px dashed $marine-blue;
+            font-size: 18px;
+            color: #43434a;      
+
+            &::after {
+                display: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .save-file {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+}

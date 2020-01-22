@@ -10,7 +10,7 @@ const { registerType, tickets, price } = require('../js/registerData')
 router.get('/', (req, res) => res.render(
     'home/home.ejs', 
     { 
-        title: 'Auspicios',
+        title: '6to Foro latinoamericano',
         sponsors: sponsors.sponsors,
         sponsorTypes: sponsors.sponsorTypes,
         schedule,
@@ -23,7 +23,7 @@ router.get('/', (req, res) => res.render(
 router.get('/expositors', (req, res) => res.render(
     'expositors/expositors.ejs', 
     { 
-        title: 'Expositors',
+        title: 'Expositores',
         expositors
     }
 ))
@@ -32,7 +32,7 @@ router.get('/expositors', (req, res) => res.render(
 router.get('/schedule', (req, res) => res.render(
     'schedule/schedule.ejs', 
     { 
-        title: 'Schedule',
+        title: 'Programa',
         schedule
     }
 ))
@@ -41,7 +41,24 @@ router.get('/schedule', (req, res) => res.render(
 router.get('/stay', (req, res) => res.render(
     'stay/stay.ejs', 
     { 
-        title: 'Stay'
+        title: 'Información turística'
+    }
+))
+
+// Papers Page
+router.get('/papers', (req, res) => res.render(
+    'papers/papers.ejs', 
+    { 
+        title: 'Trabajos de investigación'
+    }
+))
+
+
+// Contact Page
+router.get('/contact', (req, res) => res.render(
+    'contact/contact.ejs', 
+    { 
+        title: 'Contacto'
     }
 ))
 
