@@ -11,8 +11,7 @@ const sponsors = [
         { name: 'SynLab', src: 'img/sponsors/SYNLAB.png' },
     ],
     // Premium
-    [
-    ],
+    [],
     // Gold
     [
         { name: 'Dedalus', src: 'img/sponsors/DEDALUS.png' },
@@ -20,14 +19,11 @@ const sponsors = [
         { name: 'Ricoh', src: 'img/sponsors/RICOH.png' },
     ],
     // Silver
-    [
-    ],
+    [],
     // Media partner oficial
-    [
-    ],
+    [],
     // Media Partner
-    [
-    ]
+    []
 ]
 
 module.exports.sponsorTypes = sponsorTypes
