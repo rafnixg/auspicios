@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="my-4">
-            <a href="#" data-toggle="modal" data-target="#ticketsModal" class="btn light">
+            <a href="#" data-toggle="modal" data-target="#typeModal" class="btn light">
                 Inscripción
                 <i class="flaticon-arrow-point-to-right"></i>
             </a>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn dark mr-4" data-dismiss="modal">Cancelar</button>
-                    <a class="btn dark" href="/register">
+                    <a class="btn dark" href="/register?type=student">
                         Siguiente
                         <i class="flaticon-arrow-point-to-right"></i>
                     </a>
@@ -253,7 +253,7 @@
             <p class="fs-30 fw-semi-bold fc-twilight-blue my-5 text-uppercase"><%= sponsorTypes[i] %></p>
             <div class="item">
                 <% item.forEach(sponsor => { %>
-                <img class="sponsor" src="<%= sponsor.src %>" alt="<%= sponsor.name %>">
+                <img class="sponsor" width="<%= 200-(i*10)%>px" src="<%= sponsor.src %>" alt="<%= sponsor.name %>">
                 <% }) %>
             </div>
             <div class="divider my-4"></div>

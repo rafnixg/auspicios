@@ -50,10 +50,31 @@ subscribeInput.addEventListener('blur', (event) => {
 })
 
 
+
+
+const ul = document.getElementById('types')
+if (ul) {
+    for (let li of ul.children) {
+
+        li.addEventListener('click', (event, i) => {
+    
+            const active = document.getElementsByClassName('active')
+            if (active[0]) {
+                active[0].classList.remove('active')
+            }
+    
+            li.classList.add('active')
+
+            type = li.getAttribute('data-value')
+            localStorage.setItem('type', type)
+        })
+    }
+}
+
 // MAP
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -34.397, lng: 150.644 },
+        center: { lat: -12.0914281, lng: -77.0246911 },
         zoom: 8,
         styles: 
         [

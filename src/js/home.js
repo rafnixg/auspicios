@@ -1,22 +1,5 @@
 // TIKETS
 
-let type = ''
-
-const ul = document.getElementById('types')
-if (ul) {
-    for (let li of ul.children) {
-
-        li.addEventListener('click', (event, i) => {
-    
-            const active = document.getElementsByClassName('active')
-            if (active[0]) {
-                active[0].classList.remove('active')
-            }
-    
-            li.classList.add('active')
-        })
-    }
-}
 
 const addButton = document.getElementById('addTicket')
 const removeButton = document.getElementById('removeTicket')

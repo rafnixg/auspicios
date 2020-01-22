@@ -1,3 +1,19 @@
+
+let type = localStorage.getItem('type')
+
+if (type === 'student')  {
+    type = 'delegate'
+} else if (type === 'delegate') {
+    type = 'student'
+} else {
+    type = 'generic'
+}
+
+const items = document.getElementsByClassName(type)
+for (let item of items) {
+    item.classList.add('d-none')
+}
+
 // REGISTER TABS
 const nextButton = document.getElementById('next')
 
@@ -13,6 +29,7 @@ if (nextButton) {
         }
     })
 }
+
 
 // REGISTER FORM 
 const addAssistantButton = document.getElementById('addAssistant')

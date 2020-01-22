@@ -44,16 +44,16 @@
             <div class="col-12 col-md-6 mb-4">
                 <label for="email">E-mail</label>
                 <input type="text" id="email" class="form-control" required="true">
-                <div class="mt-2 <%= (registerType !== 'student' ? 'd-none' : '') %>">
+                <div class="mt-2 student generic">
                     <span class="grey-text">Registrarse con el correo que le otorga la universidad</span>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mb-4 <%= (registerType !== 'delegate' ? 'd-none' : '') %>">
+            <div class="col-12 col-md-6 mb-4 delegate generic">
                 <label for="promocode">Promocode</label>
                 <input type="text" id="promocode" class="form-control" required="true">
             </div>
         </div>
-        <div class="form-group row student <%= (registerType !== 'student' ? 'd-none' : '') %>">
+        <div class="form-group row student generic">
             <div class="col-12 px-0">
                 <p class="grey-text">Validar registro <span class="fc-red">*</span></p>
                 <p class="fw-bold fs-15 fc-grey my-4 text-center">Agregar Carnet de estudiante</p>
