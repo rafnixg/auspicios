@@ -707,11 +707,11 @@ footer {
   footer .modal .modal-dialog .modal-content .modal-body {
     text-align: left; }
     footer .modal .modal-dialog .modal-content .modal-body .form-group label {
-      color: #333;
+      color: #000;
       font-size: 15px;
       position: relative; }
     footer .modal .modal-dialog .modal-content .modal-body .form-group input {
-      color: #333;
+      color: #000;
       font-size: 15px;
       border-bottom: 1px solid rgba(111, 111, 111, 0.4);
       width: 100%;
@@ -1329,6 +1329,57 @@ footer {
       outline: none; }
 
 .papers .save-file {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: auto; }
+
+.contact .background {
+  background-image: url("../img/backgrounds/schedule.jpg"); }
+
+.contact .diary {
+  position: relative;
+  /*.twilight-blue-subtitle {
+            max-width: 430px;
+        } */ }
+  .contact .diary .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .contact .diary .days .day {
+      width: 290px;
+      background-color: #ffffff;
+      border: 0.3px solid #979797; }
+      .contact .diary .days .day > div {
+        padding: 1rem; }
+        .contact .diary .days .day > div.time.green {
+          background-color: #4ae373; }
+        .contact .diary .days .day > div.time.turquoise {
+          background-color: #47e6db; }
+        .contact .diary .days .day > div.time.fuchsia {
+          background-color: #ff61de; }
+
+.contact .custom-file {
+  height: 170px; }
+  .contact .custom-file .custom-file-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    height: 170px;
+    margin: auto;
+    padding: 20px !important;
+    text-align: center;
+    border: 2px dashed #003563;
+    font-size: 18px;
+    color: #43434a; }
+    .contact .custom-file .custom-file-label::after {
+      display: none; }
+    .contact .custom-file .custom-file-label:focus {
+      outline: none; }
+
+.contact .save-file {
   display: block;
   width: 100%;
   max-width: 400px;

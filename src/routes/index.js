@@ -54,6 +54,15 @@ router.get('/papers', (req, res) => res.render(
 ))
 
 
+// Contact Page
+router.get('/contact', (req, res) => res.render(
+    'contact/contact.ejs', 
+    { 
+        title: 'Contacto'
+    }
+))
+
+
 // Register Page
 router.get('/register', (req, res) => res.render(
     'register/register.ejs', 
