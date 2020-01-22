@@ -2,10 +2,12 @@ const expositors = [{
         tab: 'keynote',
         data: [
             [{
-                    firstName: 'Isaiah',
-                    lastName: 'Anderson',
-                    position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image1.jpg',
+                    firstName: 'Christine',
+                    lastName: 'Porath',
+                    position: 'Autora de Mastering Civility',
+                    description: 'Es profesora titular en la McDonough School of Business de la Universidad de Georgetown y es fundadora de una compañía que ayuda a crear un lugar de trabajo más humano donde los empleados puedan desarrollarse.',
+                    img_bio: 'img/expositors/cp_bio.jpg',
+                    img_home: 'img/expositors/cp_home.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -14,7 +16,8 @@ const expositors = [{
                     firstName: 'Jeanette',
                     lastName: 'McKinney',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image2.jpg',
+                    img_bio: 'img/expositors/image2.jpg',
+                    img_home: 'img/backgrounds/expositors-home.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -23,7 +26,8 @@ const expositors = [{
                     firstName: 'Ann',
                     lastName: 'Herrera',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image3.jpg',
+                    img_bio: 'img/expositors/image3.jpg',
+                    img_home: 'img/backgrounds/expositors-home.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -33,7 +37,8 @@ const expositors = [{
                     firstName: 'Brent',
                     lastName: 'Ray',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image4.jpg',
+                    img_bio: 'img/expositors/image4.jpg',
+                    img_home: 'img/backgrounds/expositors-home.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -42,7 +47,8 @@ const expositors = [{
                     firstName: 'Jeremy',
                     lastName: 'Robinson',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image5.jpg',
+                    img_bio: 'img/expositors/image5.jpg',
+                    img_home: 'img/backgrounds/expositors-home.jpg',                    
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -51,7 +57,8 @@ const expositors = [{
                     firstName: 'Jacob',
                     lastName: 'Saunders',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image0.jpg',
+                    img_bio: 'img/expositors/image0.jpg',
+                    img_home: 'img/backgrounds/expositors-home.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -66,7 +73,7 @@ const expositors = [{
                     firstName: 'Brent',
                     lastName: 'Ray',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image4.jpg',
+                    img_bio: 'img/expositors/image4.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -75,7 +82,7 @@ const expositors = [{
                     firstName: 'Jeremy',
                     lastName: 'Robinson',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image5.jpg',
+                    img_bio: 'img/expositors/image5.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -84,7 +91,7 @@ const expositors = [{
                     firstName: 'Jacob',
                     lastName: 'Saunders',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image0.jpg',
+                    img_bio: 'img/expositors/image0.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -94,7 +101,7 @@ const expositors = [{
                     firstName: 'Isaiah',
                     lastName: 'Anderson',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image1.jpg',
+                    img_bio: 'img/expositors/image1.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -103,7 +110,7 @@ const expositors = [{
                     firstName: 'Jeanette',
                     lastName: 'McKinney',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image2.jpg',
+                    img_bio: 'img/expositors/image2.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -112,7 +119,7 @@ const expositors = [{
                     firstName: 'Ann',
                     lastName: 'Herrera',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image3.jpg',
+                    img_bio: 'img/expositors/image3.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -127,7 +134,7 @@ const expositors = [{
                     firstName: 'Isaiah',
                     lastName: 'Anderson',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image1.jpg',
+                    img_bio: 'img/expositors/image1.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -136,7 +143,7 @@ const expositors = [{
                     firstName: 'Jeanette',
                     lastName: 'McKinney',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image2.jpg',
+                    img_bio: 'img/expositors/image2.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -145,7 +152,7 @@ const expositors = [{
                     firstName: 'Ann',
                     lastName: 'Herrera',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image3.jpg',
+                    img_bio: 'img/expositors/image3.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -155,7 +162,7 @@ const expositors = [{
                     firstName: 'Brent',
                     lastName: 'Ray',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image4.jpg',
+                    img_bio: 'img/expositors/image4.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -164,7 +171,7 @@ const expositors = [{
                     firstName: 'Jeremy',
                     lastName: 'Robinson',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image5.jpg',
+                    img_bio: 'img/expositors/image5.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -173,7 +180,7 @@ const expositors = [{
                     firstName: 'Jacob',
                     lastName: 'Saunders',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image0.jpg',
+                    img_bio: 'img/expositors/image0.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -188,7 +195,7 @@ const expositors = [{
                     firstName: 'Brent',
                     lastName: 'Ray',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image4.jpg',
+                    img_bio: 'img/expositors/image4.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -197,7 +204,7 @@ const expositors = [{
                     firstName: 'Jeremy',
                     lastName: 'Robinson',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image5.jpg',
+                    img_bio: 'img/expositors/image5.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -206,7 +213,7 @@ const expositors = [{
                     firstName: 'Jacob',
                     lastName: 'Saunders',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image0.jpg',
+                    img_bio: 'img/expositors/image0.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -216,7 +223,7 @@ const expositors = [{
                     firstName: 'Isaiah',
                     lastName: 'Anderson',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image1.jpg',
+                    img_bio: 'img/expositors/image1.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -225,7 +232,7 @@ const expositors = [{
                     firstName: 'Jeanette',
                     lastName: 'McKinney',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image2.jpg',
+                    img_bio: 'img/expositors/image2.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
@@ -234,7 +241,7 @@ const expositors = [{
                     firstName: 'Ann',
                     lastName: 'Herrera',
                     position: 'Vice Presitende Netflix',
-                    img: 'img/expositors/image3.jpg',
+                    img_bio: 'img/expositors/image3.jpg',
                     facebook: '#',
                     twitter: '#',
                     instagram: '#'
