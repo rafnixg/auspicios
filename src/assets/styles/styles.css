@@ -1283,6 +1283,57 @@ footer {
     .register .payment .form-group input.active {
       border-color: #6f6f6f; }
 
+.papers .background {
+  background-image: url("../img/backgrounds/schedule.jpg"); }
+
+.papers .diary {
+  position: relative;
+  /*.twilight-blue-subtitle {
+            max-width: 430px;
+        } */ }
+  .papers .diary .days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .papers .diary .days .day {
+      width: 290px;
+      background-color: #ffffff;
+      border: 0.3px solid #979797; }
+      .papers .diary .days .day > div {
+        padding: 1rem; }
+        .papers .diary .days .day > div.time.green {
+          background-color: #4ae373; }
+        .papers .diary .days .day > div.time.turquoise {
+          background-color: #47e6db; }
+        .papers .diary .days .day > div.time.fuchsia {
+          background-color: #ff61de; }
+
+.papers .custom-file {
+  height: 170px; }
+  .papers .custom-file .custom-file-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    height: 170px;
+    margin: auto;
+    padding: 20px !important;
+    text-align: center;
+    border: 2px dashed #003563;
+    font-size: 18px;
+    color: #43434a; }
+    .papers .custom-file .custom-file-label::after {
+      display: none; }
+    .papers .custom-file .custom-file-label:focus {
+      outline: none; }
+
+.papers .save-file {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: auto; }
+
 .modal .modal-dialog .modal-content {
   padding: 1rem;
   border: none;
