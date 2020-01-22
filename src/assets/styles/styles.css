@@ -929,8 +929,10 @@ footer {
     .home .countdown .timer li {
       flex-basis: 33.333%;
       border-right: 1px solid #937c4c; }
-  .home .about .video-container .video {
-    height: 550px; }
+  .home .about .video-container {
+    width: 100%; }
+    .home .about .video-container .video {
+      height: 550px; }
   .home .expositors .slider {
     display: flex;
     justify-content: space-evenly;

@@ -31,27 +31,8 @@ inputs.forEach(input => {
     }
 })
 
-const subscribeInput = document.getElementById('subscribeEmail')
-const subscribeLabel = subscribeInput.parentNode.children[0]
 
-subscribeInput.addEventListener('focus', (event) => {
-    
-    subscribeInput.classList.add('active')
-    subscribeLabel.classList.add('active')
-})
-
-subscribeInput.addEventListener('blur', (event) => {
-
-    subscribeInput.classList.remove('active')
-
-    if (!subscribeInput.value) {
-        subscribeLabel.classList.remove('active')
-    }
-})
-
-
-
-
+// TYPES
 const ul = document.getElementById('types')
 if (ul) {
     for (let li of ul.children) {
