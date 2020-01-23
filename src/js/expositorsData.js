@@ -32,38 +32,39 @@ const expositors = [{
                     twitter: '#',
                     instagram: '#'
                 },
-            ],
-            [{
-                    firstName: 'Brent',
-                    lastName: 'Ray',
-                    position: 'Vice Presitende Netflix',
-                    img_bio: 'img/expositors/image4.jpg',
-                    img_home: 'img/backgrounds/expositors-home.jpg',
-                    facebook: '#',
-                    twitter: '#',
-                    instagram: '#'
-                },
-                {
-                    firstName: 'Jeremy',
-                    lastName: 'Robinson',
-                    position: 'Vice Presitende Netflix',
-                    img_bio: 'img/expositors/image5.jpg',
-                    img_home: 'img/backgrounds/expositors-home.jpg',                    
-                    facebook: '#',
-                    twitter: '#',
-                    instagram: '#'
-                },
-                {
-                    firstName: 'Jacob',
-                    lastName: 'Saunders',
-                    position: 'Vice Presitende Netflix',
-                    img_bio: 'img/expositors/image0.jpg',
-                    img_home: 'img/backgrounds/expositors-home.jpg',
-                    facebook: '#',
-                    twitter: '#',
-                    instagram: '#'
-                },
             ]
+            // ],
+            // [{
+            //         firstName: 'Brent',
+            //         lastName: 'Ray',
+            //         position: 'Vice Presitende Netflix',
+            //         img_bio: 'img/expositors/image4.jpg',
+            //         img_home: 'img/backgrounds/expositors-home.jpg',
+            //         facebook: '#',
+            //         twitter: '#',
+            //         instagram: '#'
+            //     },
+            //     {
+            //         firstName: 'Jeremy',
+            //         lastName: 'Robinson',
+            //         position: 'Vice Presitende Netflix',
+            //         img_bio: 'img/expositors/image5.jpg',
+            //         img_home: 'img/backgrounds/expositors-home.jpg',                    
+            //         facebook: '#',
+            //         twitter: '#',
+            //         instagram: '#'
+            //     },
+            //     {
+            //         firstName: 'Jacob',
+            //         lastName: 'Saunders',
+            //         position: 'Vice Presitende Netflix',
+            //         img_bio: 'img/expositors/image0.jpg',
+            //         img_home: 'img/backgrounds/expositors-home.jpg',
+            //         facebook: '#',
+            //         twitter: '#',
+            //         instagram: '#'
+            //     },
+            // ]
         ]
     },
     {
