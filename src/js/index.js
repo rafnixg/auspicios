@@ -56,7 +56,7 @@ if (ul) {
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: -12.0914281, lng: -77.0246911 },
-        zoom: 8,
+        zoom: 18,
         styles: 
         [
             {
