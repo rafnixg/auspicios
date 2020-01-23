@@ -20,8 +20,17 @@ const nextButton = document.getElementById('next')
 if (nextButton) {
     nextButton.addEventListener('click', (event) => {
         // jQuery for Boostrap Tabs
-        $('a[aria-selected=true]').parent('li').next().children('a').tab('show')
-        const tab = $('a[aria-selected=true]').attr('href')
+
+        const tab_init = $('a[aria-selected=true]').attr('href')
+        if((type === 'student' || type === 'delegate') && tab_init==='#data'){
+            $('a[aria-selected=true]').parent('li').next().next().children('a').tab('show')
+            const tab = $('a[aria-selected=true]').attr('href')
+
+        }else{
+
+            $('a[aria-selected=true]').parent('li').next().children('a').tab('show')
+            const tab = $('a[aria-selected=true]').attr('href')
+        }
         
         if (tab === '#confirm') {
             const actionButtons = document.getElementById('action-buttons')
