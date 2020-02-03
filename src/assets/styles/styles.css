@@ -26,79 +26,79 @@
   font-weight: 900; }
 
 .fs-12 {
-  font-size: 12px; }
+  font-size: 12px !important; }
 
 .fs-13 {
-  font-size: 13px; }
+  font-size: 13px !important; }
 
 .fs-14 {
-  font-size: 14px; }
+  font-size: 14px !important; }
 
 .fs-15 {
-  font-size: 15px; }
+  font-size: 15px !important; }
 
 .fs-20 {
-  font-size: 20px; }
+  font-size: 20px !important; }
 
 .fs-22 {
-  font-size: 22px; }
+  font-size: 22px !important; }
 
 .fs-23 {
-  font-size: 23px; }
+  font-size: 23px !important; }
 
 .fs-25 {
-  font-size: 23px; }
+  font-size: 23px !important; }
 
 .fs-27 {
-  font-size: 27px; }
+  font-size: 27px !important; }
 
 .fs-30 {
-  font-size: 30px; }
+  font-size: 30px !important; }
 
 .fs-34 {
-  font-size: 34px; }
+  font-size: 34px !important; }
 
 .fs-35 {
-  font-size: 35px; }
+  font-size: 35px !important; }
 
 .fs-39 {
-  font-size: 39px; }
+  font-size: 39px !important; }
 
 .fs-40 {
-  font-size: 40px; }
+  font-size: 40px !important; }
 
 .fs-50 {
-  font-size: 50px; }
+  font-size: 50px !important; }
 
 .fs-54 {
-  font-size: 54px; }
+  font-size: 54px !important; }
 
 .fs-68 {
-  font-size: 68px; }
+  font-size: 68px !important; }
 
 .fc-white {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .fc-grey {
-  color: #6f6f6f; }
+  color: #6f6f6f !important; }
 
 .fc-light-grey {
-  color: #979797; }
+  color: #979797 !important; }
 
 .fc-grey-b {
-  color: #bbbbbb; }
+  color: #bbbbbb !important; }
 
 .fc-gold {
-  color: #937c4c; }
+  color: #937c4c !important; }
 
 .fc-twilight-blue {
-  color: #0d3666; }
+  color: #0d3666 !important; }
 
 .fc-marine-blue {
-  color: #003563; }
+  color: #003563 !important; }
 
 .fc-red {
-  color: #ff5d5d; }
+  color: #ff5d5d !important; }
 
 @keyframes fade-in {
   0% {
@@ -309,79 +309,79 @@ input, .form-control {
   font-weight: 900; }
 
 .fs-12 {
-  font-size: 12px; }
+  font-size: 12px !important; }
 
 .fs-13 {
-  font-size: 13px; }
+  font-size: 13px !important; }
 
 .fs-14 {
-  font-size: 14px; }
+  font-size: 14px !important; }
 
 .fs-15 {
-  font-size: 15px; }
+  font-size: 15px !important; }
 
 .fs-20 {
-  font-size: 20px; }
+  font-size: 20px !important; }
 
 .fs-22 {
-  font-size: 22px; }
+  font-size: 22px !important; }
 
 .fs-23 {
-  font-size: 23px; }
+  font-size: 23px !important; }
 
 .fs-25 {
-  font-size: 23px; }
+  font-size: 23px !important; }
 
 .fs-27 {
-  font-size: 27px; }
+  font-size: 27px !important; }
 
 .fs-30 {
-  font-size: 30px; }
+  font-size: 30px !important; }
 
 .fs-34 {
-  font-size: 34px; }
+  font-size: 34px !important; }
 
 .fs-35 {
-  font-size: 35px; }
+  font-size: 35px !important; }
 
 .fs-39 {
-  font-size: 39px; }
+  font-size: 39px !important; }
 
 .fs-40 {
-  font-size: 40px; }
+  font-size: 40px !important; }
 
 .fs-50 {
-  font-size: 50px; }
+  font-size: 50px !important; }
 
 .fs-54 {
-  font-size: 54px; }
+  font-size: 54px !important; }
 
 .fs-68 {
-  font-size: 68px; }
+  font-size: 68px !important; }
 
 .fc-white {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .fc-grey {
-  color: #6f6f6f; }
+  color: #6f6f6f !important; }
 
 .fc-light-grey {
-  color: #979797; }
+  color: #979797 !important; }
 
 .fc-grey-b {
-  color: #bbbbbb; }
+  color: #bbbbbb !important; }
 
 .fc-gold {
-  color: #937c4c; }
+  color: #937c4c !important; }
 
 .fc-twilight-blue {
-  color: #0d3666; }
+  color: #0d3666 !important; }
 
 .fc-marine-blue {
-  color: #003563; }
+  color: #003563 !important; }
 
 .fc-red {
-  color: #ff5d5d; }
+  color: #ff5d5d !important; }
 
 .container {
   padding-top: 3rem;
@@ -444,8 +444,8 @@ input, .form-control {
 
 .gold-title {
   font-family: Axia;
-  font-size: 20px;
-  color: #937c4c; }
+  font-size: 20px !important;
+  color: #937c4c !important; }
 
 .twilight-blue-title {
   font-size: 38px;

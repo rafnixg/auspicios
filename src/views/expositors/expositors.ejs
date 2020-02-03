@@ -50,7 +50,7 @@
                         <% item.data.forEach((arr, i) => { %>
                             <div class="expositors-list">
                                 <% arr.forEach((expositor, i) => { %>
-                                    <div data-toggle="modal" data-target="#modal<%= expositor.firstName %>" class="expositor" style="background-image: url('<%= expositor.img_bio %>');">
+                                    <div data-toggle="modal" data-target="#modal<%= expositor.firstName %>" class="expositor pointer" style="background-image: url('<%= expositor.img_bio %>');">
                                         <div>
                                             <p class="name"><%= expositor.firstName %></p>
                                             <p class="name"><%= expositor.lastName %></p>
@@ -62,23 +62,6 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="modal fade" id="modal<%= expositor.firstName %>" tabindex="-1" role="dialog" aria-labelledby="modal<%= expositor.firstName %>Label"
-                                        aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span class="ff-axia fw-normal fs-30" aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body text-left">
-                                                    <p class="gold-title"><%= expositor.firstName %> <%= expositor.lastName %></p>
-                                                    <p class="gold-title mb-4"><%= expositor.position %></p>
-                                                    <p class="fs-14"><%= expositor.description %></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 <% }) %>
                             </div>
                         <% }) %>
@@ -87,4 +70,29 @@
             </div>
         </div>
     </section>
+    <div>
+        <% expositors.forEach((item, i) => { %>
+                <% item.data.forEach((arr, i) => { %>
+                        <% arr.forEach((expositor, i) => { %>
+                            <div class="modal fade" id="modal<%= expositor.firstName %>" tabindex="-1" role="dialog" aria-labelledby="modal<%= expositor.firstName %>Label"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span class="ff-axia fw-normal fs-30" aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <p class="gold-title fs-30"><%= expositor.firstName %> <%= expositor.lastName %></p>
+                                            <p class="ff-axia fc-twilight-blue fc-24 mb-4"><%= expositor.position %></p>
+                                            <p class="fs-14"><%= expositor.description %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }) %>
+                <% }) %>
+        <% }) %>
+    </div>
 </section>
