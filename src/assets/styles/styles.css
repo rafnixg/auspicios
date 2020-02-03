@@ -31,6 +31,9 @@
 .fs-13 {
   font-size: 13px; }
 
+.fs-14 {
+  font-size: 14px; }
+
 .fs-15 {
   font-size: 15px; }
 
@@ -311,6 +314,9 @@ input, .form-control {
 .fs-13 {
   font-size: 13px; }
 
+.fs-14 {
+  font-size: 14px; }
+
 .fs-15 {
   font-size: 15px; }
 
@@ -481,6 +487,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+.nav-tabs {
+  border: none; }
+
 .btn {
   display: inline-block;
   width: max-content;
@@ -494,7 +503,7 @@ a {
   .btn.light {
     background-color: #ffffff;
     color: rgba(13, 54, 102, 0.6); }
-    .btn.light:hover {
+    .btn.light:hover, .btn.light[aria-selected="true"] {
       background-color: #003563;
       color: #ffffff; }
   .btn.dark {
@@ -1055,22 +1064,19 @@ footer {
   /*.twilight-blue-subtitle {
             max-width: 430px;
         } */ }
-  .schedule .diary .days {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .schedule .diary .days .day {
-      width: 290px;
-      background-color: #ffffff;
-      border: 0.3px solid #979797; }
-      .schedule .diary .days .day > div {
-        padding: 1rem; }
-        .schedule .diary .days .day > div.time.green {
-          background-color: #4ae373; }
-        .schedule .diary .days .day > div.time.turquoise {
-          background-color: #47e6db; }
-        .schedule .diary .days .day > div.time.fuchsia {
-          background-color: #ff61de; }
+  .schedule .diary .days .day {
+    width: 290px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 0.3px solid #979797; }
+    .schedule .diary .days .day > div {
+      padding: 1rem; }
+      .schedule .diary .days .day > div.time.green {
+        background-color: #4ae373; }
+      .schedule .diary .days .day > div.time.turquoise {
+        background-color: #47e6db; }
+      .schedule .diary .days .day > div.time.fuchsia {
+        background-color: #ff61de; }
 
 .stay .background {
   background-image: url("../img/backgrounds/stay.jpg"); }

@@ -11,12 +11,10 @@
         } */
 
         .days {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
 
             .day {
                 width: 290px;
+                margin: 0 auto;
                 background-color: $white;
                 border: 0.3px solid #979797;
 
@@ -33,5 +31,4 @@
             }
         }
     }
-
 }

@@ -9,25 +9,36 @@
             <!--<h2 class="gold-title mb-0">Agenda</h2>-->
             <h3 class="twilight-blue-subtitle">
                 Sigue el programa. <br>
-                
             </h3>
-            <div class="days my-5">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <% schedule.forEach((day, i) => { %>
-                    <div class="day">
-                        <div class="text-center">
-                            <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
-                            <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
+                    <li class="nav-item m-4">
+                        <a class="btn light" id="<%= day.class %>-tab" data-toggle="tab" href="#<%= day.class %>" role="tab"
+                            aria-controls="<%= day.class %>" aria-selected="false">
+                            <%= day.day %>
+                        </a>
+                    </li>
+                <% }) %>
+            </ul>
+            <div class="days my-5 tab-content" id="myTabContent">
+                <% schedule.forEach((day, i) => { %>
+                    <div class="tab-pane fade <%=  i === 0 ? 'show active' : '' %>" id="<%= day.class %>" role="tabpanel" aria-labelledby="<%= day.class %>-tab">
+                        <div class="day">
+                            <div class="text-center">
+                                <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
+                                <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
+                            </div>
+                            <% day.sessions.forEach(session => { %>
+                                <div class="time <%= day.class %>">
+                                    <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
+                                    <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
+                                    <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
+                                </div>
+                                <div class="description">
+                                    <p class="fs-15 fc-medium"><%= session.description %></p>
+                                </div>
+                            <% }) %>
                         </div>
-                        <% day.sessions.forEach(session => { %>
-                            <div class="time <%= day.class %>">
-                                <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
-                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
-                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
-                            </div>
-                            <div class="description">
-                                <p class="fs-15 fc-medium"><%= session.description %></p>
-                            </div>
-                        <% }) %>
                     </div>
                 <% }) %>
             </div>

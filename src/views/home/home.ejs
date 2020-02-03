@@ -85,7 +85,7 @@
                 </div>
                 <div class="modal-body">
                     <ul id="types" class="types">
-                        <li data-value="common">
+                        <li data-value="generic">
                             <p>General</p>
                             <img src="img/icon/man.svg" alt="General" width="80px" height="100px">
                         </li>
@@ -93,7 +93,7 @@
                             <p>Estudiante</p>
                             <img src="img/icon/cap.svg" alt="Estudiante" width="100px">
                         </li>
-                        <li data-value="nurse">
+                        <li data-value="delegate">
                             <p>Enfermera(o)</p>
                             <img src="img/icon/nurse.svg" alt="Enfermera" width="100px">
                         </li>
@@ -157,7 +157,7 @@
             </div>
         </div>
     </section>
-    <section class="schedule container">
+    <section class="schedule container" id="schedule">
         <h2 class="twilight-blue-title mb-0">Programa</h2>
         <div class="days my-4">
             <% schedule.forEach((day, i) => { %>
@@ -189,7 +189,7 @@
             </a>
         </div>
     </section>
-    <section class="expositors">
+    <section class="expositors" id="expositors">
         <div class="container py-0">
             <h2 class="twilight-blue-title pb-4 mb-0">Principales Expositores</h2>
         </div>

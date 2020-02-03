@@ -135,6 +135,10 @@ a {
     }
 }
 
+.nav-tabs {
+    border: none;
+}
+
 .btn {
     display: inline-block;
     width: max-content;
@@ -152,7 +156,7 @@ a {
         background-color: $white;
         color: rgba($color: $twilight-blue, $alpha: 0.6);
 
-        &:hover {
+        &:hover, &[aria-selected="true"] {
             background-color: $marine-blue;
             color: $white;
         }
