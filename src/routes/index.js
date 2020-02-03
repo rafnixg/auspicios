@@ -5,6 +5,7 @@ const sponsors = require('../js/sponsorsData')
 const expositors = require('../js/expositorsData')
 const schedule = require('../js/scheduleData')
 const { registerType, tickets, price } = require('../js/registerData')
+const inversion = require('../js/inversionData')
 
 // Home Page
 router.get('/', (req, res) => res.render(
@@ -14,7 +15,8 @@ router.get('/', (req, res) => res.render(
         sponsors: sponsors.sponsors,
         sponsorTypes: sponsors.sponsorTypes,
         schedule,
-        expositors
+        expositors,
+        inversion
     }
 ))
 
