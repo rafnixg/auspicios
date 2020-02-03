@@ -447,6 +447,11 @@ input, .form-control {
   font-size: 20px !important;
   color: #937c4c !important; }
 
+.blue-title {
+  font-family: Axia;
+  font-size: 20px !important;
+  color: #0096d2 !important; }
+
 .twilight-blue-title {
   font-size: 38px;
   font-weight: 800;
@@ -639,6 +644,8 @@ img {
             padding: 0 0.5rem; }
             .header .nav .navigation-bar li.brands > div:first-child {
               border-right: 1px solid #d4d4d4; }
+          .header .nav .navigation-bar li.brands a {
+            opacity: 1; }
           .header .nav .navigation-bar li.brands .top-text {
             position: absolute;
             top: -20px;
@@ -899,11 +906,11 @@ footer {
     .home .schedule .days .day .name p {
       line-height: 35px; }
     .home .schedule .days .day .time.green {
-      background-color: #4ae373; }
+      background-color: #003563; }
     .home .schedule .days .day .time.turquoise {
-      background-color: #47e6db; }
+      background-color: #0172D3; }
     .home .schedule .days .day .time.fuchsia {
-      background-color: #ff61de; }
+      background-color: #62B7FF; }
 
 .home .know-us {
   position: relative;
@@ -1072,11 +1079,11 @@ footer {
     .schedule .diary .days .day > div {
       padding: 1rem; }
       .schedule .diary .days .day > div.time.green {
-        background-color: #4ae373; }
+        background-color: #003563; }
       .schedule .diary .days .day > div.time.turquoise {
-        background-color: #47e6db; }
+        background-color: #0172D3; }
       .schedule .diary .days .day > div.time.fuchsia {
-        background-color: #ff61de; }
+        background-color: #62B7FF; }
 
 .stay .background {
   background-image: url("../img/backgrounds/stay.jpg"); }

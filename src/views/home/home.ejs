@@ -170,9 +170,9 @@
                     <div class="collapse <%= i === 0 ? 'show' : '' %>" id="<%= day.class %>">
                         <% day.sessions.forEach(session => { %>
                             <div class="time <%= day.class %>">
-                                <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
-                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
-                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
+                                <p class="fs-20 fc-medium fc-white"><%= session.name %></p>
+                                <p class="fs-15 fc-medium fc-white"><%= session.room %></p>
+                                <p class="fs-15 fc-medium fc-white"><%= session.hour %></p>
                             </div>
                             <!--<div class="description">
                                 <p class="fs-15 fc-medium"><%= session.description %></p>
@@ -203,7 +203,7 @@
                                     <div class="py-4 px-md-5">
                                         <p class="fs-34 fw-bold fc-white mt-2"><%= expositor.firstName %></p>
                                         <p class="fs-34 fw-bold fc-white mb-2"><%= expositor.lastName %></p>
-                                        <p class="gold-title mb-0"><%= expositor.position %></p>
+                                        <p class="blue-title mb-0"><%= expositor.position %></p>
                                         <p class="fs-12 fw-medium fc-white my-4">
                                             <%= expositor.description %>
                                         </p>
