@@ -721,6 +721,8 @@ footer {
     position: absolute;
     bottom: -75px;
     right: 0; }
+    footer .meftah img {
+      height: 29px; }
     @media (min-width: 992px) {
       footer .meftah {
         bottom: -30px; } }
@@ -919,36 +921,38 @@ footer {
   background-size: 100%;
   background-color: rgba(13, 54, 102, 0.42); }
 
-.home .inversion .data-container {
-  display: flex;
-  overflow-x: auto; }
-  .home .inversion .data-container .data-row {
+.home .inversion {
+  margin-bottom: 5rem !important; }
+  .home .inversion .data-container {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    .home .inversion .data-container .data-row .data-col {
-      flex: 1;
-      width: 210px;
+    overflow-x: auto; }
+    .home .inversion .data-container .data-row {
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 85px;
-      margin-top: 1.5rem;
-      padding: 1rem;
-      text-align: center;
-      background-color: #eaeaea;
-      color: #191919; }
-      .home .inversion .data-container .data-row .data-col:not(:last-child) {
-        border-right: 2px solid #ffffff; }
-      .home .inversion .data-container .data-row .data-col p {
-        line-height: 22px;
-        font-weight: 700; }
-    .home .inversion .data-container .data-row.head .data-col {
-      height: 100px;
-      background-color: #0d3666;
-      color: #ffffff; }
-      .home .inversion .data-container .data-row.head .data-col p {
-        font-weight: normal; }
+      align-items: center; }
+      .home .inversion .data-container .data-row .data-col {
+        flex: 1;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85px;
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: center;
+        background-color: #eaeaea;
+        color: #191919; }
+        .home .inversion .data-container .data-row .data-col:not(:last-child) {
+          border-right: 2px solid #ffffff; }
+        .home .inversion .data-container .data-row .data-col p {
+          line-height: 22px;
+          font-weight: 500; }
+      .home .inversion .data-container .data-row.head .data-col {
+        height: 100px;
+        background-color: #0d3666;
+        color: #ffffff; }
+        .home .inversion .data-container .data-row.head .data-col p {
+          font-weight: normal; }
 
 .home .sponsors .item {
   display: flex;

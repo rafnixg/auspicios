@@ -17,7 +17,7 @@ const inversion = {
             price: '40 USD'
         },
         {
-            ticket: 'General',
+            ticket: 'Enfermera(o)',
             preforo: 'Acceso al minicurso <br> full day',
             foro: 'Acceso a Sala Plenaria <br> + Salas Paralelas',
             preforoAndForo: 'Acceso al minicurso <br> + Sala Plenaria <br> + Salas Paralelas',
@@ -25,7 +25,7 @@ const inversion = {
             price: '50 USD'
         },
         {
-            ticket: 'General',
+            ticket: 'Estudiante',
             preforo: 'Acceso al minicurso <br> full day',
             foro: 'Acceso a Sala Plenaria <br> + Salas Paralelas',
             preforoAndForo: 'Acceso al minicurso <br> + Sala Plenaria <br> + Salas Paralelas',
@@ -33,7 +33,7 @@ const inversion = {
             price: '60 USD'
         },
         {
-            ticket: 'General',
+            ticket: 'Corporativo',
             preforo: 'Acceso al minicurso <br> full day',
             foro: 'Acceso a Sala Plenaria <br> + Salas Paralelas',
             preforoAndForo: 'Acceso al minicurso <br> + Sala Plenaria <br> + Salas Paralelas',

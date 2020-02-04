@@ -30,7 +30,7 @@ const schedule = [
         ]   
     },
     {
-        name: 'Foro',
+        name: 'Foro Día1 / Día 2',
         data: [
             {
                 description: 'Foro día 1',
