@@ -160,26 +160,28 @@
     <section class="schedule container" id="schedule">
         <h2 class="twilight-blue-title mb-0">Programa</h2>
         <div class="days my-4">
-            <% schedule.forEach((day, i) => { %>
-                <div class="day">
-                    <div class="name" data-toggle="collapse" data-target="#<%= day.class %>" aria-expanded="false"
-                        aria-controls="<%= day.class %>">
-                        <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
-                        <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
+            <% schedule.forEach((item, i) => { %>
+                <% item.data.forEach(data => { %>
+                    <div class="day">
+                        <div class="name" data-toggle="collapse" data-target="#<%= data.class %>" aria-expanded="false"
+                            aria-controls="<%= data.class %>">
+                            <p class="fs-22 fc-twilight-blue text-center"><%= data.description %></p>
+                            <p class="fs-16 fc-twilight-blue text-center"><%= data.date %></p>
+                        </div>
+                        <div class="collapse <%= i === 0 ? 'show' : '' %>" id="<%= data.class %>">
+                            <% data.sessions.forEach(session => { %>
+                                <div class="time <%= data.class %>">
+                                    <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
+                                    <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
+                                    <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
+                                </div>
+                                <!--<div class="description">
+                                    <p class="fs-15 fc-medium"><%= session.description %></p>
+                                </div>-->
+                            <% }) %>
+                        </div>
                     </div>
-                    <div class="collapse <%= i === 0 ? 'show' : '' %>" id="<%= day.class %>">
-                        <% day.sessions.forEach(session => { %>
-                            <div class="time <%= day.class %>">
-                                <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
-                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
-                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
-                            </div>
-                            <!--<div class="description">
-                                <p class="fs-15 fc-medium"><%= session.description %></p>
-                            </div>-->
-                        <% }) %>
-                    </div>
-                </div>
+                <% }) %>
             <% }) %>
         </div>
         <div class="text-center">

@@ -921,7 +921,7 @@ footer {
     align-items: center; }
     .home .inversion .data-container .data-row .data-col {
       flex: 1;
-      width: 200px;
+      width: 210px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1066,7 +1066,6 @@ footer {
         } */ }
   .schedule .diary .days .day {
     width: 290px;
-    margin: 0 auto;
     background-color: #ffffff;
     border: 0.3px solid #979797; }
     .schedule .diary .days .day > div {

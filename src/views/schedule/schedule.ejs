@@ -11,31 +11,35 @@
                 Sigue el programa. <br>
             </h3>
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                <% schedule.forEach((day, i) => { %>
+                <% schedule.forEach((item, i) => { %>
                     <li class="nav-item m-4">
-                        <a class="btn light" id="<%= day.class %>-tab" data-toggle="tab" href="#<%= day.class %>" role="tab"
-                            aria-controls="<%= day.class %>" aria-selected="false">
-                            <%= day.day %>
+                        <a class="btn light" id="<%= item.name %>-tab" data-toggle="tab" href="#<%= item.name %>" role="tab"
+                            aria-controls="<%= item.name %>" aria-selected="false">
+                            <%= item.name %>
                         </a>
                     </li>
                 <% }) %>
             </ul>
             <div class="days my-5 tab-content" id="myTabContent">
-                <% schedule.forEach((day, i) => { %>
-                    <div class="tab-pane fade <%=  i === 0 ? 'show active' : '' %>" id="<%= day.class %>" role="tabpanel" aria-labelledby="<%= day.class %>-tab">
-                        <div class="day">
-                            <div class="text-center">
-                                <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
-                                <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
-                            </div>
-                            <% day.sessions.forEach(session => { %>
-                                <div class="time <%= day.class %>">
-                                    <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
-                                    <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
-                                    <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
-                                </div>
-                                <div class="description">
-                                    <p class="fs-15 fc-medium"><%= session.description %></p>
+                <% schedule.forEach((item, i) => { %>
+                    <div class="tab-pane fade <%=  i === 0 ? 'show active' : '' %>" id="<%= item.name %>" role="tabpanel" aria-labelledby="<%= item.name %>-tab">
+                        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                            <% item.data.forEach(data => { %>
+                                <div class="day">
+                                    <div class="text-center">
+                                        <p class="fs-22 fc-twilight-blue text-center"><%= data.description %></p>
+                                        <p class="fs-16 fc-twilight-blue text-center"><%= data.date %></p>
+                                    </div>
+                                    <% data.sessions.forEach(session => { %>
+                                        <div class="time <%= data.class %>">
+                                            <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
+                                            <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
+                                            <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
+                                        </div>
+                                        <div class="description">
+                                            <p class="fs-15 fc-medium"><%= session.description %></p>
+                                        </div>
+                                    <% }) %>
                                 </div>
                             <% }) %>
                         </div>
