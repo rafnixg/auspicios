@@ -1,6 +1,7 @@
 const schedule = [
     {
         name: 'Preforo',
+        tab: 'tab1',
         data: [
             {
                 description: 'Preforo',
@@ -31,6 +32,7 @@ const schedule = [
     },
     {
         name: 'Foro Día1 / Día 2',
+        tab: 'tab2',
         data: [
             {
                 description: 'Foro día 1',
