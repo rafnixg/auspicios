@@ -48,6 +48,9 @@ footer {
         position: absolute;
         bottom: -75px;
         right: 0;
+        img{
+            height: 29px;
+        }
 
         @media (min-width: 992px) {
             bottom: -30px;

@@ -147,7 +147,6 @@
     .expositors {
 
         .trama {
-            margin: 0 3rem;
             border-radius: 15px;
             background-color: $twilight-blue;
 
@@ -194,9 +193,9 @@
                 }
     
                 .time {
-                    &.green { background-color: $green; }
-                    &.turquoise { background-color: $turquoise; }
-                    &.fuchsia { background-color: $fuchsia; }
+                    &.green { background-color: $blue1; }
+                    &.turquoise { background-color: $blue2; }
+                    &.fuchsia { background-color: $blue3; }
                 }
             }
         }
@@ -204,10 +203,59 @@
 
     .know-us {
         position: relative;
-        padding: 7rem 1rem;
+        padding: 4rem 1rem;
         background-image: url('../img/backgrounds/know-us.jpg');
         background-size: 100%;
         background-color: rgba(13, 54, 102, 0.42);
+    }
+
+    .inversion {
+        margin-bottom: 5rem!important;
+        .data-container {
+            display: flex;
+            overflow-x: auto;
+
+            .data-row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .data-col {
+                    flex: 1;
+                    width: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 85px;
+                    margin-top: 1rem;
+                    padding: 1rem;
+                    text-align: center;
+                    background-color: #eaeaea;
+                    color: $black;
+
+                    &:not(:last-child) {
+                        border-right: 2px solid $white;
+                    }
+
+                    p {
+                        line-height: 22px;
+                        font-weight: 500;
+                    }
+                }
+
+                &.head {
+                    .data-col {
+                        height: 100px;
+                        background-color: $twilight-blue;
+                        color: $white;
+
+                        p {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .sponsors {
@@ -287,6 +335,10 @@
                     max-width: 500px;
                 }
             }
+        }
+
+        .know-us {
+            padding: 7rem 1rem;
         }
     }
 }

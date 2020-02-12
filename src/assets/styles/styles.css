@@ -26,76 +26,79 @@
   font-weight: 900; }
 
 .fs-12 {
-  font-size: 12px; }
+  font-size: 12px !important; }
 
 .fs-13 {
-  font-size: 13px; }
+  font-size: 13px !important; }
+
+.fs-14 {
+  font-size: 14px !important; }
 
 .fs-15 {
-  font-size: 15px; }
+  font-size: 15px !important; }
 
 .fs-20 {
-  font-size: 20px; }
+  font-size: 20px !important; }
 
 .fs-22 {
-  font-size: 22px; }
+  font-size: 22px !important; }
 
 .fs-23 {
-  font-size: 23px; }
+  font-size: 23px !important; }
 
 .fs-25 {
-  font-size: 23px; }
+  font-size: 23px !important; }
 
 .fs-27 {
-  font-size: 27px; }
+  font-size: 27px !important; }
 
 .fs-30 {
-  font-size: 30px; }
+  font-size: 30px !important; }
 
 .fs-34 {
-  font-size: 34px; }
+  font-size: 34px !important; }
 
 .fs-35 {
-  font-size: 35px; }
+  font-size: 35px !important; }
 
 .fs-39 {
-  font-size: 39px; }
+  font-size: 39px !important; }
 
 .fs-40 {
-  font-size: 40px; }
+  font-size: 40px !important; }
 
 .fs-50 {
-  font-size: 50px; }
+  font-size: 50px !important; }
 
 .fs-54 {
-  font-size: 54px; }
+  font-size: 54px !important; }
 
 .fs-68 {
-  font-size: 68px; }
+  font-size: 68px !important; }
 
 .fc-white {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .fc-grey {
-  color: #6f6f6f; }
+  color: #6f6f6f !important; }
 
 .fc-light-grey {
-  color: #979797; }
+  color: #979797 !important; }
 
 .fc-grey-b {
-  color: #bbbbbb; }
+  color: #bbbbbb !important; }
 
 .fc-gold {
-  color: #937c4c; }
+  color: #937c4c !important; }
 
 .fc-twilight-blue {
-  color: #0d3666; }
+  color: #0d3666 !important; }
 
 .fc-marine-blue {
-  color: #003563; }
+  color: #003563 !important; }
 
 .fc-red {
-  color: #ff5d5d; }
+  color: #ff5d5d !important; }
 
 @keyframes fade-in {
   0% {
@@ -306,76 +309,79 @@ input, .form-control {
   font-weight: 900; }
 
 .fs-12 {
-  font-size: 12px; }
+  font-size: 12px !important; }
 
 .fs-13 {
-  font-size: 13px; }
+  font-size: 13px !important; }
+
+.fs-14 {
+  font-size: 14px !important; }
 
 .fs-15 {
-  font-size: 15px; }
+  font-size: 15px !important; }
 
 .fs-20 {
-  font-size: 20px; }
+  font-size: 20px !important; }
 
 .fs-22 {
-  font-size: 22px; }
+  font-size: 22px !important; }
 
 .fs-23 {
-  font-size: 23px; }
+  font-size: 23px !important; }
 
 .fs-25 {
-  font-size: 23px; }
+  font-size: 23px !important; }
 
 .fs-27 {
-  font-size: 27px; }
+  font-size: 27px !important; }
 
 .fs-30 {
-  font-size: 30px; }
+  font-size: 30px !important; }
 
 .fs-34 {
-  font-size: 34px; }
+  font-size: 34px !important; }
 
 .fs-35 {
-  font-size: 35px; }
+  font-size: 35px !important; }
 
 .fs-39 {
-  font-size: 39px; }
+  font-size: 39px !important; }
 
 .fs-40 {
-  font-size: 40px; }
+  font-size: 40px !important; }
 
 .fs-50 {
-  font-size: 50px; }
+  font-size: 50px !important; }
 
 .fs-54 {
-  font-size: 54px; }
+  font-size: 54px !important; }
 
 .fs-68 {
-  font-size: 68px; }
+  font-size: 68px !important; }
 
 .fc-white {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .fc-grey {
-  color: #6f6f6f; }
+  color: #6f6f6f !important; }
 
 .fc-light-grey {
-  color: #979797; }
+  color: #979797 !important; }
 
 .fc-grey-b {
-  color: #bbbbbb; }
+  color: #bbbbbb !important; }
 
 .fc-gold {
-  color: #937c4c; }
+  color: #937c4c !important; }
 
 .fc-twilight-blue {
-  color: #0d3666; }
+  color: #0d3666 !important; }
 
 .fc-marine-blue {
-  color: #003563; }
+  color: #003563 !important; }
 
 .fc-red {
-  color: #ff5d5d; }
+  color: #ff5d5d !important; }
 
 .container {
   padding-top: 3rem;
@@ -438,8 +444,13 @@ input, .form-control {
 
 .gold-title {
   font-family: Axia;
-  font-size: 20px;
-  color: #937c4c; }
+  font-size: 20px !important;
+  color: #937c4c !important; }
+
+.blue-title {
+  font-family: Axia;
+  font-size: 20px !important;
+  color: #0096d2 !important; }
 
 .twilight-blue-title {
   font-size: 38px;
@@ -481,6 +492,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+.nav-tabs {
+  border: none; }
+
 .btn {
   display: inline-block;
   width: max-content;
@@ -494,7 +508,7 @@ a {
   .btn.light {
     background-color: #ffffff;
     color: rgba(13, 54, 102, 0.6); }
-    .btn.light:hover {
+    .btn.light:hover, .btn.light[aria-selected="true"] {
       background-color: #003563;
       color: #ffffff; }
   .btn.dark {
@@ -523,12 +537,13 @@ img {
 .carousel-control-prev,
 .carousel-control-next {
   width: 10%;
-  opacity: 1; }
+  opacity: 1;
+  top: 125px; }
   .carousel-control-prev .flaticon-arrow-point-to-right,
   .carousel-control-next .flaticon-arrow-point-to-right {
     width: 40px;
     height: 40px;
-    padding: 10px;
+    padding: 12px;
     border-radius: 50%;
     background-color: #ffffff; }
     .carousel-control-prev .flaticon-arrow-point-to-right::before,
@@ -539,6 +554,9 @@ img {
       transform: rotate(180deg); }
 
 @media (min-width: 769px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 0px; }
   .container {
     padding-top: 5rem;
     padding-bottom: 5rem; }
@@ -626,6 +644,8 @@ img {
             padding: 0 0.5rem; }
             .header .nav .navigation-bar li.brands > div:first-child {
               border-right: 1px solid #d4d4d4; }
+          .header .nav .navigation-bar li.brands a {
+            opacity: 1; }
           .header .nav .navigation-bar li.brands .top-text {
             position: absolute;
             top: -20px;
@@ -701,6 +721,8 @@ footer {
     position: absolute;
     bottom: -75px;
     right: 0; }
+    footer .meftah img {
+      height: 29px; }
     @media (min-width: 992px) {
       footer .meftah {
         bottom: -30px; } }
@@ -861,7 +883,6 @@ footer {
       border-bottom: 15px solid transparent; }
 
 .home .expositors .trama {
-  margin: 0 3rem;
   border-radius: 15px;
   background-color: #0d3666; }
   .home .expositors .trama .slider {
@@ -887,18 +908,51 @@ footer {
     .home .schedule .days .day .name p {
       line-height: 35px; }
     .home .schedule .days .day .time.green {
-      background-color: #4ae373; }
+      background-color: #003563; }
     .home .schedule .days .day .time.turquoise {
-      background-color: #47e6db; }
+      background-color: #0172D3; }
     .home .schedule .days .day .time.fuchsia {
-      background-color: #ff61de; }
+      background-color: #62B7FF; }
 
 .home .know-us {
   position: relative;
-  padding: 7rem 1rem;
+  padding: 4rem 1rem;
   background-image: url("../img/backgrounds/know-us.jpg");
   background-size: 100%;
   background-color: rgba(13, 54, 102, 0.42); }
+
+.home .inversion {
+  margin-bottom: 5rem !important; }
+  .home .inversion .data-container {
+    display: flex;
+    overflow-x: auto; }
+    .home .inversion .data-container .data-row {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .home .inversion .data-container .data-row .data-col {
+        flex: 1;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85px;
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: center;
+        background-color: #eaeaea;
+        color: #191919; }
+        .home .inversion .data-container .data-row .data-col:not(:last-child) {
+          border-right: 2px solid #ffffff; }
+        .home .inversion .data-container .data-row .data-col p {
+          line-height: 22px;
+          font-weight: 500; }
+      .home .inversion .data-container .data-row.head .data-col {
+        height: 100px;
+        background-color: #0d3666;
+        color: #ffffff; }
+        .home .inversion .data-container .data-row.head .data-col p {
+          font-weight: normal; }
 
 .home .sponsors .item {
   display: flex;
@@ -939,7 +993,9 @@ footer {
     align-items: center; }
     .home .expositors .slider > div {
       flex: 1;
-      max-width: 500px; } }
+      max-width: 500px; }
+  .home .know-us {
+    padding: 7rem 1rem; } }
 
 @media (min-width: 992px) {
   .home .schedule .days {
@@ -1019,22 +1075,18 @@ footer {
   /*.twilight-blue-subtitle {
             max-width: 430px;
         } */ }
-  .schedule .diary .days {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .schedule .diary .days .day {
-      width: 290px;
-      background-color: #ffffff;
-      border: 0.3px solid #979797; }
-      .schedule .diary .days .day > div {
-        padding: 1rem; }
-        .schedule .diary .days .day > div.time.green {
-          background-color: #4ae373; }
-        .schedule .diary .days .day > div.time.turquoise {
-          background-color: #47e6db; }
-        .schedule .diary .days .day > div.time.fuchsia {
-          background-color: #ff61de; }
+  .schedule .diary .days .day {
+    width: 290px;
+    background-color: #ffffff;
+    border: 0.3px solid #979797; }
+    .schedule .diary .days .day > div {
+      padding: 1rem; }
+      .schedule .diary .days .day > div.time.green {
+        background-color: #003563; }
+      .schedule .diary .days .day > div.time.turquoise {
+        background-color: #0172D3; }
+      .schedule .diary .days .day > div.time.fuchsia {
+        background-color: #62B7FF; }
 
 .stay .background {
   background-image: url("../img/backgrounds/stay.jpg"); }

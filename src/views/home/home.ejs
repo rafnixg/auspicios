@@ -1,8 +1,7 @@
 <section class="home">
     <section class="main background">
-
-        <div class="main-text d-flex justify-content-center align-items-center">
-            <div class="mr-5">
+        <div class="main-text d-flex flex-wrap justify-content-center align-items-center">
+            <div class="mr-lg-5">
                 <p class="ff-axia fs-27">
                     6º Foro Latinoamericano de
                 </p>
@@ -11,7 +10,7 @@
                     en la Salud
                 </p>
             </div>
-            <div>
+            <div class="mt-4 mt-lg-0">
                 <p class="ff-axia-bold fs-35">
                     <span class="mr-2">Preforo 28</span>
                     <span>Foro 29 y 30</span>
@@ -86,7 +85,7 @@
                 </div>
                 <div class="modal-body">
                     <ul id="types" class="types">
-                        <li data-value="common">
+                        <li data-value="generic">
                             <p>General</p>
                             <img src="img/icon/man.svg" alt="General" width="80px" height="100px">
                         </li>
@@ -94,7 +93,7 @@
                             <p>Estudiante</p>
                             <img src="img/icon/cap.svg" alt="Estudiante" width="100px">
                         </li>
-                        <li data-value="nurse">
+                        <li data-value="delegate">
                             <p>Enfermera(o)</p>
                             <img src="img/icon/nurse.svg" alt="Enfermera" width="100px">
                         </li>
@@ -139,7 +138,7 @@
                 <p class="fs-15 fc-grey">
                     En su 6ta edición, el Foro Latinoamericano de Calidad y Seguridad en la Salud, tiene como principal misión, atraer a líderes y profesionales del sector de la región y el mundo, para discutir temas de relevancia para la transformación sanitaria y el desarrollo de un sistema sostenible.
                 </p>
-                <a href="#" class="btn dark mt-5 mb-5 mb-md-0">
+                <a href="/contact" class="btn dark mt-5 mb-5 mb-md-0">
                     Contactar
                     <i class="flaticon-arrow-point-to-right"></i>
                 </a>
@@ -158,29 +157,32 @@
             </div>
         </div>
     </section>
-    <section class="schedule container">
+    <section class="schedule container pt-0" id="schedule">
         <h2 class="twilight-blue-title mb-0">Programa</h2>
         <div class="days my-4">
-            <% schedule.forEach((day, i) => { %>
-                <div class="day">
-                    <div class="name" data-toggle="collapse" data-target="#<%= day.class %>" aria-expanded="false"
-                        aria-controls="<%= day.class %>">
-                        <p class="fs-22 fc-twilight-blue text-center"><%= day.day %></p>
-                        <p class="fs-16 fc-twilight-blue text-center"><%= day.date %></p>
+
+            <% schedule.forEach((item, i) => { %>
+                <% item.data.forEach(data => { %>
+                    <div class="day">
+                        <div class="name" data-toggle="collapse" data-target="#<%= data.class %>" aria-expanded="false"
+                            aria-controls="<%= data.class %>">
+                            <p class="fs-22 fc-twilight-blue text-center"><%= data.description %></p>
+                            <p class="fs-16 fc-twilight-blue text-center"><%= data.date %></p>
+                        </div>
+                        <div class="collapse <%= i === 0 ? 'show' : '' %>" id="<%= data.class %>">
+                            <% data.sessions.forEach(session => { %>
+                                <div class="time <%= data.class %>">
+                                    <p class="fs-20 fc-medium fc-white"><%= session.name %></p>
+                                    <p class="fs-15 fc-medium fc-white"><%= session.room %></p>
+                                    <p class="fs-15 fc-medium fc-white"><%= session.hour %></p>
+                                </div>
+                                <!--<div class="description">
+                                    <p class="fs-15 fc-medium"><%= session.description %></p>
+                                </div>-->
+                            <% }) %>
+                        </div>
                     </div>
-                    <div class="collapse <%= i === 0 ? 'show' : '' %>" id="<%= day.class %>">
-                        <% day.sessions.forEach(session => { %>
-                            <div class="time <%= day.class %>">
-                                <p class="fs-20 fc-medium fc-twilight-blue"><%= session.name %></p>
-                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.room %></p>
-                                <p class="fs-15 fc-medium fc-twilight-blue"><%= session.hour %></p>
-                            </div>
-                            <!--<div class="description">
-                                <p class="fs-15 fc-medium"><%= session.description %></p>
-                            </div>-->
-                        <% }) %>
-                    </div>
-                </div>
+                <% }) %>
             <% }) %>
         </div>
         <div class="text-center">
@@ -190,21 +192,21 @@
             </a>
         </div>
     </section>
-    <section class="expositors">
+    <section class="expositors" id="expositors">
         <div class="container py-0">
             <h2 class="twilight-blue-title pb-4 mb-0">Principales Expositores</h2>
         </div>
-        <div class="trama mb-5">
+        <div class="trama mx-4 mb-5">
             <div id="carouselExpositors" class="carousel slide" data-ride="carousel" pause="hover">
-                <div class="carousel-inner">
+                <div class="carousel-inner p-4">
                     <% expositors[0].data.forEach((arr, i) => { %>
                         <% arr.forEach((expositor, j) => { %>
                             <div class="carousel-item <%= i === 0 && j === 0 ? 'active' : '' %>"">
-                                <div class=" slider">
-                                    <div class="pl-5 ml-5">
+                                <div class="slider">
+                                    <div class="py-4 px-md-5">
                                         <p class="fs-34 fw-bold fc-white mt-2"><%= expositor.firstName %></p>
                                         <p class="fs-34 fw-bold fc-white mb-2"><%= expositor.lastName %></p>
-                                        <p class="gold-title mb-0"><%= expositor.position %></p>
+                                        <p class="blue-title mb-0"><%= expositor.position %></p>
                                         <p class="fs-12 fw-medium fc-white my-4">
                                             <%= expositor.description %>
                                         </p>
@@ -214,7 +216,7 @@
                                         </a>
                                     </div>
                                     <div class="text-center">
-                                        <img class="pl-4 my-4" src="<%= expositor.img_home %>"
+                                        <img class="" src="<%= expositor.img_home %>"
                                             alt="<%= expositor.firstName %> <%= expositor.lastName %>" width="100%" height="300px">
                                     </div>
                                 </div>
@@ -233,11 +235,36 @@
         </div>
         </div>
     </section>
+    <section class="inversion mb-5">
+        <div class="container pb-4">
+            <h2 class="twilight-blue-title mb-0">Inversión</h2>
+        </div>
+        <div class="data-container mx-lg-5">
+            <div class="m-auto">
+                <div class="data-row head">
+                    <% inversion.head.forEach((text, i) => { %>
+                        <div class="data-col">
+                            <p><%- text %></p>
+                        </div>
+                    <% }) %>
+                </div>
+                <% inversion.body.forEach((item, i) => { %>
+                    <div class="data-row">
+                        <% Object.keys(item).forEach(key => { %>
+                            <div class="data-col">
+                                <p><%- item[key] %></p>
+                            </div>
+                        <% }) %>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
     <section class="know-us background trama">
         <div class="title-with-stroke text-center">
             <p>No te pierdas Lima</p>
         </div>
-        <a href="/stay" class="btn light mx-auto mt-4 mb-5 mb-md-0">
+        <a href="/stay" class="btn light mx-auto my-4">
             Ver más
             <i class="flaticon-arrow-point-to-right"></i>
         </a>

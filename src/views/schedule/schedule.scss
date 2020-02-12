@@ -11,9 +11,6 @@
         } */
 
         .days {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
 
             .day {
                 width: 290px;
@@ -25,13 +22,12 @@
     
                     &.time {
     
-                        &.green { background-color: $green; }
-                        &.turquoise { background-color: $turquoise; }
-                        &.fuchsia { background-color: $fuchsia; }
+                        &.green { background-color: $blue1; }
+                        &.turquoise { background-color: $blue2; }
+                        &.fuchsia { background-color: $blue3; }
                     }
                 } 
             }
         }
     }
-
 }

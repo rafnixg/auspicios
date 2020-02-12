@@ -30,7 +30,10 @@ $dark-grey: #202020;
 $light: #d8d8d8;
 $background-light: #f6f6f6;
 $white: #ffffff;
-
+// myColors
+$blue1:#003563;
+$blue2:#0172D3;
+$blue3:#62B7FF;
 .ff-axia {
     font-family: Axia;
 }
@@ -68,97 +71,101 @@ $white: #ffffff;
 }
 
 .fs-12 {
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .fs-13 {
-    font-size: 13px;
+    font-size: 13px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
 }
 
 .fs-15 {
-    font-size: 15px;
+    font-size: 15px !important;
 }
 
 .fs-20 {
-    font-size: 20px;
+    font-size: 20px !important;
 }
 
 .fs-22 {
-    font-size: 22px;
+    font-size: 22px !important;
 }
 
 .fs-23 {
-    font-size: 23px;
+    font-size: 23px !important;
 }
 
 .fs-25 {
-    font-size: 23px;
+    font-size: 23px !important;
 }
 
 .fs-27 {
-    font-size: 27px;
+    font-size: 27px !important;
 }
 
 .fs-30 {
-    font-size: 30px;
+    font-size: 30px !important;
 }
 
 .fs-34 {
-    font-size: 34px;
+    font-size: 34px !important;
 }
 
 .fs-35 {
-    font-size: 35px;
+    font-size: 35px !important;
 }
 
 .fs-39 {
-    font-size: 39px;
+    font-size: 39px !important;
 }
 
 .fs-40 {
-    font-size: 40px;
+    font-size: 40px !important;
 }
 
 .fs-50 {
-    font-size: 50px;
+    font-size: 50px !important;
 }
 
 .fs-54 {
-    font-size: 54px;
+    font-size: 54px !important;
 }
 
 .fs-68 {
-    font-size: 68px;
+    font-size: 68px !important;
 }
 
 .fc-white {
-    color: $white;
+    color: $white !important;
 }
 
 .fc-grey {
-    color: $grey;
+    color: $grey !important;
 }
 
 .fc-light-grey {
-    color: $light-grey;
+    color: $light-grey !important;
 }
 
 .fc-grey-b {
-    color: $grey-b;
+    color: $grey-b !important;
 }
 
 .fc-gold {
-    color: $gold;
+    color: $gold !important;
 }
 
 .fc-twilight-blue {
-    color: $twilight-blue;
+    color: $twilight-blue !important;
 }
 
 .fc-marine-blue {
-    color: $marine-blue;
+    color: $marine-blue !important;
 }
 
 .fc-red {
-    color: $red;
+    color: $red !important;
 }

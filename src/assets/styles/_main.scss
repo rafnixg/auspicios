@@ -82,8 +82,13 @@
 
 .gold-title {
     font-family: Axia;
-    font-size: 20px;
-    color: $gold;
+    font-size: 20px !important;
+    color: $gold !important;
+}
+.blue-title {
+    font-family: Axia;
+    font-size: 20px !important;
+    color: #0096d2 !important;
 }
 
 .twilight-blue-title {
@@ -135,6 +140,10 @@ a {
     }
 }
 
+.nav-tabs {
+    border: none;
+}
+
 .btn {
     display: inline-block;
     width: max-content;
@@ -152,7 +161,7 @@ a {
         background-color: $white;
         color: rgba($color: $twilight-blue, $alpha: 0.6);
 
-        &:hover {
+        &:hover, &[aria-selected="true"] {
             background-color: $marine-blue;
             color: $white;
         }
@@ -197,11 +206,12 @@ img {
 .carousel-control-next {
     width: 10%;
     opacity: 1;
+    top: 125px;
 
     .flaticon-arrow-point-to-right {
         width: 40px;
         height: 40px;
-        padding: 10px;
+        padding: 12px;
         border-radius: 50%;
         background-color: $white;
 
@@ -216,6 +226,12 @@ img {
 }
 
 @media (min-width: 769px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 0px;
+    }
+
     .container {
         padding-top: 5rem;
         padding-bottom: 5rem;

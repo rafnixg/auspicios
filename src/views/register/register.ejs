@@ -17,21 +17,26 @@
                         aria-selected="true"></a>
                     <p>Datos de delegado</p>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item delegate student">
                     <a class="nav-link" id="assistants-tab" data-toggle="tab" href="#assistants" role="tab" aria-controls="assistants"
                         aria-selected="false"></a>
                     <p>Asistentes</p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="ticket-tab" data-toggle="tab" href="#ticket" role="tab" aria-controls="ticket"
+                        aria-selected="false"></a>
+                    <p>Entradas</p>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info"
                         aria-selected="false"></a>
                     <p>Información adicional</p>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" id="workshops-tab" data-toggle="tab" href="#workshops" role="tab" aria-controls="workshops"
                         aria-selected="false"></a>
-                    <p>Workshops</p>
-                </li>
+                    <p>Salas Paralelas</p>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment"
                         aria-selected="false"></a>
@@ -48,6 +53,7 @@
                 <%- include('./tabs/assistants-tab.ejs'); -%>
                 <%- include('./tabs/confirm-tab.ejs'); -%>
                 <%- include('./tabs/workshops-tab.ejs'); -%>
+                <%- include('./tabs/ticket-tab.ejs'); -%>
                 <%- include('./tabs/info-tab.ejs'); -%>
                 <%- include('./tabs/payment-tab.ejs'); -%>
                 <%- include('./tabs/action-buttons.ejs'); -%>
